@@ -305,30 +305,36 @@ header {
         .stimulation .stimulation-contain ul.stimulate-main li .content-wrraper p {
           font-size: 25px;
           color: #626262; }
-  .stimulation .animat-block .animat1, .stimulation .animat-block .animat2, .stimulation .animat-block .animat3, .stimulation .animat-block .animat4 {
-    position: absolute; }
-  .stimulation .animat-block .animat1 {
+  .stimulation .animat-block {
+    position: absolute;
     top: 0;
-    left: 5%;
-    -webkit-animation: move2 12s linear infinite;
-            animation: move2 12s linear infinite; }
-  .stimulation .animat-block .animat2 {
-    top: 38%;
-    left: 5%;
-    -webkit-animation: move2 9s linear infinite;
-            animation: move2 9s linear infinite;
-    z-index: -1; }
-  .stimulation .animat-block .animat3 {
-    bottom: 0;
-    left: 13%;
-    -webkit-animation: plane-key 8s linear infinite;
-            animation: plane-key 8s linear infinite;
-    z-index: -1; }
-  .stimulation .animat-block .animat4 {
-    top: 50%;
-    right: 10%;
-    animation: move3 35s linear infinite alternate-reverse;
-    z-index: -1; }
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .stimulation .animat-block .animat1, .stimulation .animat-block .animat2, .stimulation .animat-block .animat3, .stimulation .animat-block .animat4 {
+      position: absolute; }
+    .stimulation .animat-block .animat1 {
+      top: 0;
+      left: 5%;
+      -webkit-animation: move2 12s linear infinite;
+              animation: move2 12s linear infinite; }
+    .stimulation .animat-block .animat2 {
+      top: 38%;
+      left: 5%;
+      -webkit-animation: move2 9s linear infinite;
+              animation: move2 9s linear infinite;
+      z-index: -1; }
+    .stimulation .animat-block .animat3 {
+      bottom: 0;
+      left: 13%;
+      -webkit-animation: plane-key 8s linear infinite;
+              animation: plane-key 8s linear infinite;
+      z-index: -1; }
+    .stimulation .animat-block .animat4 {
+      top: 50%;
+      right: 10%;
+      animation: move3 35s linear infinite alternate-reverse;
+      z-index: -1; }
 
 /*=======================
   4.Scientific reasoning
@@ -2047,10 +2053,7 @@ footer {
   .stimulation .animat-block .animat2 {
     top: 43%; }
   .stimulation .animat-block .animat3 {
-    width: 25px;
-    height: 26px;
-    background: gray;
-    z-index: 1; }
+    width: 25px; }
   .stimulation .animat-block .animat4 {
     top: 35%; }
   .our-mission .title-1 h2 {
