@@ -1682,7 +1682,12 @@ footer {
     .baby-genius .icon-block {
       bottom: 5%; }
     .baby-genius .baby-genius-contain {
-      height: 480px; }
+      height: 
+        
+        
+        
+        
+        px; }
       .baby-genius .baby-genius-contain > div {
         width: 50%; }
       .baby-genius .baby-genius-contain .partner-animat {
@@ -2055,8 +2060,7 @@ footer {
   .stimulation .animat-block .animat2 {
     top: 43%; }
   .stimulation .animat-block .animat3 {
-    width: 25px;
-    height: 26px;
+    width: 10%;
     background: gray;
     z-index: 1; }
   .stimulation .animat-block .animat4 {
