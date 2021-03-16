@@ -330,6 +330,7 @@ header{
         display:flex;
         align-items:center;
         justify-content:center;
+        position: relative;
         .img-wrraper{
           width:50%;
           text-align:center;
@@ -347,6 +348,14 @@ header{
             color:$dark;
           }
         }
+
+      }
+      .animat3{
+        bottom: 0;
+        left: 13%;
+        -webkit-animation: plane-key 8s linear infinite;
+        animation: plane-key 8s linear infinite;
+        z-index: -1;
       }
     }
   }

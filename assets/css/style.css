@@ -291,7 +291,8 @@ header {
               align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      position: relative; }
       .stimulation .stimulation-contain ul.stimulate-main li .img-wrraper {
         width: 50%;
         text-align: center; }
@@ -305,6 +306,12 @@ header {
         .stimulation .stimulation-contain ul.stimulate-main li .content-wrraper p {
           font-size: 25px;
           color: #626262; }
+    .stimulation .stimulation-contain ul.stimulate-main .animat3 {
+      bottom: 0;
+      left: 13%;
+      -webkit-animation: plane-key 8s linear infinite;
+      animation: plane-key 8s linear infinite;
+      z-index: -1; }
   .stimulation .animat-block {
     position: absolute;
     top: 0;
