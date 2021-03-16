@@ -1,0 +1,56 @@
+/*===============
+ custom animation
+================*/
+@keyframes cloudanimat {
+  0% {
+    transform: translateX(0px) ;
+  }
+  50% {
+    transform: translateX(100px) ;
+  }
+  100% {
+    transform: translateX(0px) ;
+  }
+}
+
+@keyframes hom-round {
+  0% {
+    transform: translate(0px) scale(0.5) ;
+  }
+  50% {
+    transform: translate(10px) scale(1.2);
+  }
+  100% {
+    transform: translate(0px) scale(0.5);
+  }
+}
+
+@keyframes plane-key {
+  0% {
+    transform: translateY(0) ;
+  }
+  50% {
+    transform: translateY(-30px) translateX(50px) rotateX(20deg) ;
+  }
+  100% {
+    transform: translateY(-60px) translateX(90px)  rotateX(30deg);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(10px) rotate(-360deg);
+  }
+}
+
+@keyframes move3 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-200px) translateX(-100px) rotate(-365deg);
+  }
+}
