@@ -5,6 +5,7 @@ body{
   font-family:$font-1,$font-2;
   overflow-x:hidden;
   //display:none;
+  -webkit-font-smoothing:antialiased;
 }
 ul {
   margin: 0;
@@ -367,7 +368,8 @@ header{
     .animat3{
       bottom: 0;
       left: 13%;
-      animation:plane-key 8s linear infinite;
+      //-webkit-animation: plane-key 8s linear infinite;
+      animation: plane-key 8s  infinite;
       z-index:-1;
     }
     .animat4{
@@ -948,7 +950,7 @@ footer{
         h3{
           font-size:20px;
           color:$white;
-          font-weight:700;
+          font-weight:normal;
           font-family:$font-2;
           margin-bottom:15px;
           display: flex;
