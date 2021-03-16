@@ -307,10 +307,11 @@ header {
           font-size: 25px;
           color: #626262; }
     .stimulation .stimulation-contain ul.stimulate-main .animat3 {
+      position: absolute;
       bottom: 0;
       left: 13%;
       -webkit-animation: plane-key 8s linear infinite;
-      animation: plane-key 8s linear infinite;
+              animation: plane-key 8s linear infinite;
       z-index: -1; }
   .stimulation .animat-block {
     position: absolute;
@@ -1855,6 +1856,11 @@ footer {
       .stimulation .stimulation-contain ul.stimulate-main li .content-wrraper p {
         font-size: 14px;
         width: 290px; }
+    .stimulation .stimulation-contain ul.stimulate-main .animat3 {
+      width: 25px;
+      height: auto;
+      left: 0;
+      bottom: 6%; }
     .stimulation .animat-block .animat1, .stimulation .animat-block .animat3, .stimulation .animat-block .animat4 {
       width: 30px; }
     .stimulation .animat-block .animat2 {
