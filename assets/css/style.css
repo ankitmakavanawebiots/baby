@@ -1016,22 +1016,22 @@ footer {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
   50% {
-    -webkit-transform: translateY(-30px) translateX(50px) rotateX(20deg);
-            transform: translateY(-30px) translateX(50px) rotateX(20deg); }
+    -webkit-transform: translateY(-30px) translateX(50px);
+            transform: translateY(-30px) translateX(50px); }
   100% {
-    -webkit-transform: translateY(-60px) translateX(90px) rotateX(30deg);
-            transform: translateY(-60px) translateX(90px) rotateX(30deg); } }
+    -webkit-transform: translateY(-60px) translateX(90px);
+            transform: translateY(-60px) translateX(90px); } }
 
 @keyframes plane-key {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
   50% {
-    -webkit-transform: translateY(-30px) translateX(50px) rotateX(20deg);
-            transform: translateY(-30px) translateX(50px) rotateX(20deg); }
+    -webkit-transform: translateY(-30px) translateX(50px);
+            transform: translateY(-30px) translateX(50px); }
   100% {
-    -webkit-transform: translateY(-60px) translateX(90px) rotateX(30deg);
-            transform: translateY(-60px) translateX(90px) rotateX(30deg); } }
+    -webkit-transform: translateY(-60px) translateX(90px);
+            transform: translateY(-60px) translateX(90px); } }
 
 @-webkit-keyframes move2 {
   0% {

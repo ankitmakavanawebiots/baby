@@ -30,10 +30,10 @@
     transform: translateY(0) ;
   }
   50% {
-    transform: translateY(-30px) translateX(50px) rotateX(20deg) ;
+    transform: translateY(-30px) translateX(50px);
   }
   100% {
-    transform: translateY(-60px) translateX(90px)  rotateX(30deg);
+    transform: translateY(-60px) translateX(90px);
   }
 }
 
