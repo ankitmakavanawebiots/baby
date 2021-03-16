@@ -174,7 +174,7 @@ header{
   background-size:cover;
   background-position:center;
   position:relative;
-  z-index: 2;
+  //z-index: 2;
   overflow: hidden;
   &:before{
     position:absolute;
@@ -352,7 +352,6 @@ header{
   .animat-block{
     .animat1,.animat2,.animat3,.animat4{
       position: absolute;
-      z-index: -1;
     }
     .animat1{
       top:0;
@@ -363,16 +362,19 @@ header{
       top:38%;
       left:5%;
       animation:move2 9s linear infinite;
+      z-index:-1;
     }
     .animat3{
       bottom: 0;
       left: 13%;
       animation:plane-key 8s linear infinite;
+      z-index:-1;
     }
     .animat4{
       top:50%;
       right: 10%;
       animation:move3 35s linear infinite alternate-reverse;
+      z-index:-1;
     }
   }
 }
