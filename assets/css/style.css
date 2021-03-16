@@ -1778,7 +1778,14 @@ footer {
       padding-left: 90px;
       padding-right: 90px; }
     .our-team .animat-block .animat1, .our-team .animat-block .animat2 {
-      display: none; }
+      width: auto; }
+    .our-team .animat-block .animat1 {
+      height: 40px;
+      top: unset;
+      bottom: 0; }
+    .our-team .animat-block .animat2 {
+      height: 40px;
+      top: 30%; }
   .advisory {
     padding-bottom: 50px;
     padding-top: 50px; }
@@ -1963,19 +1970,27 @@ footer {
     background-color: #6184c6; }
     .our-team:before, .our-team:after {
       display: none; }
-    .our-team .team-box {
-      margin-left: unset;
-      margin-right: unset; }
-      .our-team .team-box .front, .our-team .team-box .back {
-        width: 100%;
-        border-radius: 25px; }
-      .our-team .team-box .back {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
+    .our-team .team-block {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .our-team .team-block > div {
+        max-width: 380px; }
+    .our-team .team-box .front, .our-team .team-box .back {
+      width: 100%;
+      border-radius: 40px; }
+    .our-team .team-box .back {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .our-team .animat-block .animat1 {
+      height: 30px; }
+    .our-team .animat-block .animat2 {
+      height: 30px;
+      top: 35%; }
   .shadow1 {
     -webkit-filter: drop-shadow(10px 10px 0px #fae5e5);
             filter: drop-shadow(10px 10px 0px #fae5e5); }
@@ -2158,21 +2173,19 @@ footer {
     font-size: 18px; }
   .our-team .title-1 p {
     font-size: 18px; }
-  .our-team .team-box {
-    height: 300px; }
-    .our-team .team-box .front, .our-team .team-box .back {
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px; }
-      .our-team .team-box .front h3, .our-team .team-box .back h3 {
-        font-size: 26px; }
-      .our-team .team-box .front h4, .our-team .team-box .back h4 {
-        font-size: 18px;
-        margin-bottom: 10px; }
-      .our-team .team-box .front p, .our-team .team-box .back p {
-        font-size: 16px; }
-      .our-team .team-box .front .back, .our-team .team-box .back .back {
-        padding-bottom: 20px; }
+  .our-team .team-box .front, .our-team .team-box .back {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .our-team .team-box .front h3, .our-team .team-box .back h3 {
+      font-size: 26px; }
+    .our-team .team-box .front h4, .our-team .team-box .back h4 {
+      font-size: 18px;
+      margin-bottom: 10px; }
+    .our-team .team-box .front p, .our-team .team-box .back p {
+      font-size: 16px; }
+    .our-team .team-box .front .back, .our-team .team-box .back .back {
+      padding-bottom: 20px; }
   .advisory .advisory-block > div {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -2223,9 +2236,8 @@ footer {
     top: 35%; }
   .our-mission .title-1 h2 {
     font-size: 25px; }
-  .our-team .team-block {
-    padding-left: 30px;
-    padding-right: 30px; }
+  .our-team .team-block > div {
+    width: 100%; }
   .our-team .team-box .team-detail h3 {
     font-size: 22px; }
   .our-team .team-box .team-detail h4 {
@@ -2246,6 +2258,22 @@ footer {
             flex: 100%; }
     .advisory .advisory-block > div:nth-child(n+2) {
       margin-top: 25px; } }
+
+@media (max-width: 420px) {
+  .arrow-1 .slick-next {
+    right: -25px; }
+  .arrow-1 .slick-prev {
+    left: -25px; }
+  .our-team .team-block {
+    padding-left: 40px;
+    padding-right: 40px; }
+  .our-team .team-box {
+    height: 260px; }
+    .our-team .team-box .front p, .our-team .team-box .back p {
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      overflow: hidden; } }
 
 @media (max-width: 360px) {
   .stimulation .stimulation-contain ul.stimulate-main li .img-wrraper {
