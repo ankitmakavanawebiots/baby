@@ -321,8 +321,8 @@ header {
   .stimulation .animat-block .animat3 {
     bottom: 0;
     left: 13%;
-    -webkit-animation: plane-key 8s  infinite;
-            animation: plane-key 8s  infinite;
+    -webkit-animation: plane-key 8s linear infinite;
+            animation: plane-key 8s linear infinite;
     z-index: -1; }
   .stimulation .animat-block .animat4 {
     top: 50%;
