@@ -2045,6 +2045,11 @@ footer {
     top: 18%; }
   .stimulation .animat-block .animat2 {
     top: 43%; }
+  .stimulation .animat-block .animat3 {
+    width: 25px;
+    height: 26px;
+    background: gray;
+    z-index: 1; }
   .stimulation .animat-block .animat4 {
     top: 35%; }
   .our-mission .title-1 h2 {
