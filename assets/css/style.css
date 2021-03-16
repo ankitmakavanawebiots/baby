@@ -594,7 +594,8 @@ footer {
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      -webkit-font-smoothing: antialiased; }
       footer .footer-main .footer-left .chat-icon h3 img {
         margin-right: 5px; }
     footer .footer-main .footer-right {
@@ -625,7 +626,8 @@ footer {
 =============*/
 .about {
   position: relative;
-  background-position: center; }
+  background-position: center;
+  display: block; }
   .about:before {
     position: absolute;
     content: '';
@@ -656,8 +658,60 @@ footer {
         width: 60%;
         margin: auto;
         font-size: 25px; }
-  .about .animat-block .animat1, .about .animat-block .animat2, .about .animat-block .animat3 {
+  .about .animat-block .animat1, .about .animat-block .animat2, .about .animat-block .animat3, .about .animat-block .star1, .about .animat-block .star2 {
     position: absolute; }
+  .about .animat-block .animat1 {
+    left: 0;
+    bottom: 18%; }
+  .about .animat-block .animat2 {
+    top: 45%;
+    left: 10%; }
+  .about .animat-block .animat3 {
+    right: 0;
+    bottom: 12%; }
+  .about .animat-block .star1 {
+    top: 15%;
+    left: 10%; }
+  .about .animat-block .star2 {
+    right: 40%;
+    bottom: 8%; }
+  .about .animat-block .round1, .about .animat-block .round2, .about .animat-block .round3, .about .animat-block .round4, .about .animat-block .round5, .about .animat-block .round6, .about .animat-block .round7 {
+    position: absolute;
+    border-radius: 50%; }
+  .about .animat-block .round1, .about .animat-block .round4 {
+    bottom: 0;
+    right: 20%;
+    background-color: #faaba9;
+    width: 23px;
+    height: 23px; }
+  .about .animat-block .round4, .about .animat-block .round5 {
+    width: 13px;
+    height: 13px;
+    bottom: 50%;
+    right: 15%; }
+  .about .animat-block .round5 {
+    background-color: #f2c3d3;
+    width: 13px;
+    height: 13px;
+    bottom: 15%;
+    right: unset;
+    left: 20%; }
+  .about .animat-block .round2, .about .animat-block .round3, .about .animat-block .round6 {
+    top: 24%;
+    right: 15%;
+    background-color: #d9dcbc;
+    width: 23px;
+    height: 23px; }
+  .about .animat-block .round6 {
+    top: 24%;
+    right: unset;
+    left: 23%;
+    width: 13px;
+    height: 13px; }
+  .about .animat-block .round3 {
+    top: unset;
+    bottom: 39%;
+    right: 8%; }
 
 /*===============
   7.Our mission
@@ -739,8 +793,6 @@ footer {
   .our-team .team-box {
     height: 545px;
     position: relative;
-    -webkit-perspective: 600px;
-    -moz-perspective: 600px;
     margin-left: 22px;
     margin-right: 22px; }
     .our-team .team-box .front {
@@ -776,9 +828,7 @@ footer {
       padding-top: 45px;
       padding-left: 45px;
       padding-right: 45px;
-      overflow: hidden;
-      -webkit-perspective: 1000px;
-              perspective: 1000px; }
+      overflow: hidden; }
       .our-team .team-box .front h3, .our-team .team-box .back h3 {
         font-size: 45px;
         color: #5169b1;
@@ -825,6 +875,14 @@ footer {
     top: 25%;
     right: 5%;
     animation: move2 35s linear infinite alternate-reverse; }
+  .our-team .animat-block .round1 {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #ffaba9; }
 
 /*===============
   9.Advisory
@@ -860,7 +918,8 @@ footer {
     width: 80%;
     margin: auto; }
     .advisory .advisory-box .advisory-detail {
-      margin-top: 15px; }
+      margin-top: 35px;
+      padding-left: 20px; }
       .advisory .advisory-box .advisory-detail h2 {
         font-size: 35px;
         color: #5169b1; }
@@ -1051,7 +1110,7 @@ footer {
     background-image: url(../images/about/before2.png);
     height: 152px; }
   .about .about-contain {
-    height: 580px; }
+    height: 702px; }
   .our-team {
     padding-bottom: 218px; }
     .our-team:after {
@@ -1394,7 +1453,15 @@ footer {
   .testimonial .testimonial-box > div.box-3 {
     padding-left: 100px; }
   .testimonial .testimonial-box > div.box-4 {
-    padding-left: 100px; } }
+    padding-left: 100px; }
+  .our-team .team-block {
+    padding-left: 60px;
+    padding-right: 60px; }
+  .our-team .animat-block .round1 {
+    top: 10%;
+    right: 10%; }
+  .our-team .animat-block .animat1 {
+    left: -5px; } }
 
 @media (max-width: 1300px) and (min-width: 1200px) {
   .scientific .scientific-box {
@@ -1481,6 +1548,20 @@ footer {
     height: 500px; }
     .about .about-contain .title-1 p {
       font-size: 20px; }
+  .about .animat-block .animat1, .about .animat-block .animat2, .about .animat-block .animat3 {
+    width: auto; }
+  .about .animat-block .animat1 {
+    height: 80px; }
+  .about .animat-block .animat2 {
+    height: 30px; }
+  .about .animat-block .animat3 {
+    height: 100px; }
+  .about .animat-block .round4, .about .animat-block .round6, .about .animat-block .round5 {
+    width: 10px;
+    height: 10px; }
+  .about .animat-block .round1, .about .animat-block .round2, .about .animat-block .round3 {
+    width: 18px;
+    height: 18px; }
   .our-mission .title-1 h2 {
     font-size: 35px; }
   .our-mission p {
@@ -1489,14 +1570,38 @@ footer {
     margin-bottom: 10px; }
   .our-team .title-1 p {
     font-size: 20px; }
+  .our-team .team-box {
+    height: 400px; }
+  .our-team .team-block {
+    padding-left: 30px;
+    padding-right: 30px; }
+  .our-team .animat-block .round1 {
+    top: 5%;
+    right: 5%;
+    width: 18px;
+    height: 18px; }
+  .our-team .animat-block .animat1 {
+    top: 9%; }
   .phone-view .phone-view-box img {
     height: 400px; }
-  .advisory .advisory-box .advisory-detail h2 {
-    font-size: 22px; }
+  .advisory .advisory-box .advisory-detail {
+    margin-top: 30px; }
+    .advisory .advisory-box .advisory-detail h2 {
+      font-size: 22px; }
   .advisory .advisory-block > div:nth-child(n+4) {
     margin-top: 30px; }
   footer {
     padding-top: 160px; } }
+
+@media (max-width: 1099px) {
+  .our-team .team-block {
+    padding-left: 120px;
+    padding-right: 120px; } }
+
+@media (max-width: 1026px) {
+  .our-team .team-block {
+    padding-left: 80px;
+    padding-right: 80px; } }
 
 @media (max-width: 991px) {
   .custom-container, .container-second {
@@ -1583,7 +1688,11 @@ footer {
     .testimonial .testimonial-box h3 {
       font-size: 24px; }
     .testimonial .testimonial-box p {
-      font-size: 16px; }
+      font-size: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
     .testimonial .testimonial-box.width-415 {
       width: auto;
       height: 352px; }
@@ -1624,12 +1733,22 @@ footer {
         margin-top: 10px; }
       footer .footer-main ul.icon li img {
         width: 35px; }
-  .about:before {
-    display: none; }
   .about .about-contain {
     height: 400px; }
+  .about .animat-block .animat1 {
+    height: 60px; }
+  .about .animat-block .animat2 {
+    height: 22px; }
+  .about .animat-block .animat3 {
+    height: 60px; }
+  .about .animat-block .star1, .about .animat-block .star2 {
+    width: 20px;
+    height: auto; }
+  .about .animat-block .round1, .about .animat-block .round2, .about .animat-block .round3 {
+    width: 15px;
+    height: 15px; }
   .our-mission {
-    padding-top: 50px;
+    padding-top: 140px;
     padding-bottom: 48px; }
     .our-mission .title-1 h2 {
       font-size: 30px; }
@@ -1643,19 +1762,29 @@ footer {
       width: auto; }
     .our-team .team-box {
       margin-right: 10px;
-      margin-left: 10px; }
+      margin-left: 10px;
+      height: 368px; }
       .our-team .team-box .front h4, .our-team .team-box .back h4 {
         margin-bottom: 15px; }
     .our-team .team-block {
-      padding-left: 50px;
-      padding-right: 50px; }
+      padding-left: 90px;
+      padding-right: 90px; }
     .our-team .animat-block .animat1, .our-team .animat-block .animat2 {
       display: none; }
   .advisory {
     padding-bottom: 50px;
     padding-top: 50px; }
     .advisory:before, .advisory:after {
+      display: none; }
+    .advisory .advisory-box .advisory-detail {
+      padding-left: 10px; }
+    .advisory .animat-block .animat3 {
       display: none; } }
+
+@media (max-width: 825px) {
+  .our-team .team-block {
+    padding-left: 50px;
+    padding-right: 50px; } }
 
 @media (max-width: 767px) {
   .custom-container, .container-second {
@@ -1790,18 +1919,30 @@ footer {
       display: none; }
     .about .about-contain .title-1 p {
       width: auto; }
+    .about .animat-block .animat2 {
+      top: 35%; }
+    .about .animat-block .star1 {
+      left: 50%; }
+    .about .animat-block .round1 {
+      bottom: 15%;
+      right: 25%; }
+    .about .animat-block .round4 {
+      bottom: 65%; }
+    .about .animat-block .round3 {
+      bottom: 51%;
+      right: 4%; }
+    .about .animat-block .round6 {
+      left: 35%; }
   .our-mission {
     padding-top: 50px;
     padding-bottom: 45px; }
-    .our-mission .title-1 h2 {
-      margin-bottom: 10px; }
     .our-mission .img-wrraper {
       margin-bottom: 35px;
       text-align: center; }
     .our-mission .our-mission-contain {
-      margin-top: 10px; }
+      margin-top: 20px; }
       .our-mission .our-mission-contain p:nth-child(n+2) {
-        margin-top: 10px; }
+        margin-top: 15px; }
   .our-team {
     padding-top: 48px;
     padding-bottom: 45px;
@@ -1814,7 +1955,7 @@ footer {
       margin-right: unset; }
       .our-team .team-box .front, .our-team .team-box .back {
         width: 100%;
-        border-radius: 20px; }
+        border-radius: 25px; }
       .our-team .team-box .back {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1989,6 +2130,17 @@ footer {
         margin-top: 10%; }
         .about .about-contain .title-1 p {
           font-size: 18px; }
+    .about .animat-block .animat1 {
+      height: 30px; }
+    .about .animat-block .animat2 {
+      height: 18px; }
+    .about .animat-block .animat3 {
+      height: 30px; }
+    .about .animat-block .round1, .about .animat-block .round2, .about .animat-block .round3, .about .animat-block .round4, .about .animat-block .round5, .about .animat-block .round6, .about .animat-block .round7 {
+      width: 10px;
+      height: 10px; }
+    .about .animat-block .star1, .about .animat-block .star2 {
+      width: 15px; }
   .our-mission p {
     font-size: 18px; }
   .our-team .title-1 p {
@@ -2058,10 +2210,6 @@ footer {
     top: 35%; }
   .our-mission .title-1 h2 {
     font-size: 25px; }
-  .our-mission .our-mission-contain {
-    margin-top: 5px; }
-    .our-mission .our-mission-contain p:nth-child(n+2) {
-      margin-top: 5px; }
   .our-team .team-block {
     padding-left: 30px;
     padding-right: 30px; }

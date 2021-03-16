@@ -5,18 +5,19 @@
       dots: false,
       infinite: true,
       speed: 300,
+      fade:true,
       slidesToShow: 3,
       slidesToScroll: 3,
       responsive: [
           {
-              breakpoint: 1355,
+              breakpoint: 1100,
               settings: {
                   slidesToShow: 2,
                   slidesToScroll: 2,
               }
           },
           {
-              breakpoint: 768,
+              breakpoint:600,
               settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,

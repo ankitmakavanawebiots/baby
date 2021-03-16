@@ -959,6 +959,7 @@ footer{
           margin-bottom:15px;
           display: flex;
           align-items: center;
+          -webkit-font-smoothing:antialiased;
           img{
             margin-right:5px;
           }
@@ -1016,6 +1017,7 @@ footer{
 .about{
   position:relative;
   background-position:center;
+  display: block;
   &:before{
     position:absolute;
     content:'';
@@ -1046,11 +1048,72 @@ footer{
     }
   }
   .animat-block{
-    .animat1,.animat2,.animat3{
+    .animat1,.animat2,.animat3,.star1,.star2{
       position: absolute;
     }
     .animat1{
-
+      left:0;
+      bottom:18%;
+    }
+    .animat2{
+      top:45%;
+      left:10%;
+    }
+    .animat3{
+      right:0;
+      bottom:12%;
+    }
+    .star1{
+      top:15%;
+      left:10%;
+    }
+    .star2{
+      right:40%;
+      bottom:8%;
+    }
+    .round1,.round2,.round3,.round4,.round5,.round6,.round7{
+      position:absolute;
+      border-radius:50%;
+    }
+    .round1,.round4{
+      bottom:0;
+      right:20%;
+      background-color:#faaba9;
+      width: 23px;
+      height: 23px;
+    }
+    .round4,.round5{
+      width: 13px;
+      height: 13px;
+      bottom: 50%;
+      right: 15%;
+    }
+    .round5{
+      background-color: #f2c3d3;
+      width: 13px;
+      height: 13px;
+      bottom: 15%;
+      right: unset;
+      left: 20%;
+    }
+    .round2,.round3,.round6{
+      top: 24%;
+      right: 15%;
+      background-color:#d9dcbc;
+      width: 23px;
+      height: 23px;
+    }
+    .round6{
+      top: 24%;
+      right: unset;
+      left: 23%;
+      width: 13px;
+      height: 13px;
+    }
+    .round3{
+      top:unset;
+      bottom: 39%;
+      right: 8%;
     }
   }
 }
@@ -1142,8 +1205,8 @@ footer{
   .team-box {
     height:545px;
     position: relative;
-    -webkit-perspective: 600px;
-    -moz-perspective: 600px;
+    //-webkit-perspective: 100px;
+    //-moz-perspective: 100px;
     margin-left: 22px;
     margin-right: 22px;
     .front {
@@ -1180,7 +1243,7 @@ footer{
       padding-left:45px;
       padding-right:45px;
       overflow:hidden;
-      perspective:1000px;
+      //perspective:1000px;
       h3{
         font-size:45px;
         color:$title-color;
@@ -1217,6 +1280,10 @@ footer{
       }
     }
   }
+  .wow{
+    //padding-top:20px;
+    //padding-bottom:20px;
+  }
   .team-block{
     padding-left:90px;
     padding-right:90px;
@@ -1237,6 +1304,15 @@ footer{
       right: 5%;
       animation:move2 35s linear infinite alternate-reverse;
     }
+    .round1{
+      position: absolute;
+      top: 15%;
+      right: 15%;
+      width: 23px;
+      height: 23px;
+      border-radius:50%;
+      background-color: #ffaba9;
+    }
   }
 }
 
@@ -1245,6 +1321,9 @@ footer{
 /*===============
   9.Advisory
 ===============*/
+.mb-35px{
+  //margin-bottom:35px;
+}
 .advisory{
   padding-top:93px;
   padding-bottom:66px;
@@ -1286,7 +1365,8 @@ footer{
     width:80%;
     margin:auto;
     .advisory-detail{
-      margin-top:15px;
+      margin-top:35px;
+      padding-left:20px;
       h2{
         font-size: 35px;
         color: $title-color;

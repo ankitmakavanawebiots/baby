@@ -86,7 +86,7 @@
       height:152px;
     }
     .about-contain{
-      height:580px;
+      height:702px;
     }
   }
 
@@ -797,45 +797,27 @@
       }
     }
   }
+
+  //our team //
+  .our-team {
+    .team-block{
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    .animat-block {
+      .round1{
+        top: 10%;
+        right: 10%;
+      }
+      .animat1{
+        left: -5px;
+      }
+    }
+  }
+
 }
 
 
-
-
-@media (max-width: 1470px) and (min-width: 1270px){
-  // testimonial //
-  //.testimonial {
-  //  .testimonial-box{
-  //    min-height:300px;
-  //    padding-right:40px;
-  //    padding-left:40px;
-  //    h3{
-  //      font-size:22px;
-  //    }
-  //    ul{
-  //      margin-bottom:5px;
-  //      li{
-  //        i{
-  //          font-size:16px;
-  //        }
-  //      }
-  //    }
-  //    p{
-  //      font-size:16px;
-  //      line-height:23px;
-  //    }
-  //    &.width-415{
-  //      height:375px;
-  //    }
-  //    &.width-528{
-  //      height:330px;
-  //    }
-  //    &.width-472{
-  //      height:330px;
-  //    }
-  //  }
-  //}
-}
 
 @media(max-width: 1300px) and (min-width: 1200px){
   // scientific start
@@ -859,6 +841,9 @@
     }
   }
 }
+
+
+
 @media (max-width: 1199px){
   .title-1{
     h2{
@@ -945,8 +930,6 @@
     }
   }
 
-
-
   // testimonial //
   .testimonial {
     .title-1{
@@ -1001,6 +984,29 @@
       }
     }
 
+    .animat-block {
+      .animat1,.animat2,.animat3{
+        width:auto;
+      }
+      .animat1{
+        height:80px;
+      }
+      .animat2{
+        height:30px;
+      }
+      .animat3{
+        height:100px;
+      }
+      .round4,.round6,.round5{
+        width:10px;
+        height:10px;
+      }
+      .round1,.round2,.round3{
+        width:18px;
+        height:18px;
+      }
+    }
+
   }
 
 
@@ -1014,6 +1020,8 @@
       p{
         font-size: 20px;
       }
+
+
   }
 
   // our team //
@@ -1026,7 +1034,28 @@
         font-size:20px;
       }
     }
+    .team-box{
+      height:400px;
+    }
+    .team-block{
+      padding-left:30px;
+      padding-right:30px;
+    }
+    .animat-block {
+
+      .round1{
+        top: 5%;
+        right: 5%;
+        width: 18px;
+        height: 18px;
+      }
+      .animat1{
+        top:9%;
+      }
+    }
   }
+
+
 
 
   // phone view //
@@ -1042,6 +1071,7 @@
   .advisory {
     .advisory-box {
       .advisory-detail {
+        margin-top:30px;
         h2{
           font-size:22px;
         }
@@ -1066,15 +1096,27 @@
 }
 
 
+
+@media (max-width: 1099px){
+// our team //
+  .our-team {
+    .team-block{
+      padding-left:120px;
+      padding-right:120px;
+    }
+  }
+}
+
+
+
 @media (max-width:1026px){
-  // testimonial //
-  //.testimonial {
-  //  .testimonial-box {
-  //    p{
-  //      font-size:16px;
-  //    }
-  //  }
-  //}
+  // our team //
+  .our-team {
+    .team-block{
+      padding-left:80px;
+      padding-right:80px;
+    }
+  }
 }
 
 
@@ -1257,6 +1299,10 @@
       }
       p{
         font-size:16px;
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
       }
       &.width-415{
         width: auto;
@@ -1337,17 +1383,36 @@
 
   //about //
   .about {
-    &:before{
-      display:none;
-    }
+    //&:before{
+    //  display:none;
+    //}
     .about-contain{
       height: 400px;
+    }
+    .animat-block {
+      .animat1{
+        height:60px;
+      }
+      .animat2{
+        height:22px;
+      }
+      .animat3{
+        height:60px;
+      }
+      .star1,.star2{
+        width:20px;
+        height:auto;
+      }
+      .round1,.round2,.round3{
+        width:15px;
+        height:15px;
+      }
     }
   }
 
   // our mission //
   .our-mission{
-    padding-top:50px;
+    padding-top:140px;
     padding-bottom:48px;
     .title-1 {
       h2{
@@ -1373,6 +1438,7 @@
     .team-box{
       margin-right: 10px;
       margin-left: 10px;
+      height:368px;
       .front,.back {
         h4{
           margin-bottom: 15px;
@@ -1380,8 +1446,8 @@
       }
     }
     .team-block{
-      padding-left:50px;
-      padding-right:50px;
+      padding-left:90px;
+      padding-right:90px;
     }
     .animat-block{
       .animat1,.animat2{
@@ -1399,9 +1465,32 @@
     &:before,&:after{
       display: none;
     }
+    .advisory-box {
+      .advisory-detail{
+        padding-left:10px;
+      }
+    }
+    .animat-block {
+      .animat3{
+        display: none;
+      }
+    }
   }
 
 }
+
+
+@media (max-width:825px){
+// our team //
+  .our-team {
+    .team-block{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+}
+
 
 @media (max-width:767px){
   .custom-container, .container-second{
@@ -1615,6 +1704,7 @@
           }
         }
       }
+
     }
     .testimonial-block{
       padding-left: 80px;
@@ -1678,6 +1768,31 @@
          }
        }
      }
+
+    .animat-block {
+      .animat2{
+        top:35%;
+      }
+      .star1{
+        left:50%;
+      }
+      .round1{
+        bottom:15%;
+        right:25%;
+      }
+      .round4{
+        bottom:65%;
+      }
+      .round3{
+        bottom: 51%;
+        right: 4%;
+      }
+      .round6{
+        left:35%;
+      }
+
+
+    }
   }
 
   // our misision //
@@ -1686,7 +1801,7 @@
     padding-bottom:45px;
     .title-1 {
       h2{
-        margin-bottom:10px;
+        //margin-bottom:10px;
       }
     }
     .img-wrraper{
@@ -1694,10 +1809,10 @@
       text-align:center;
     }
     .our-mission-contain {
-      margin-top:10px;
+      margin-top:20px;
       p{
         &:nth-child(n+2){
-          margin-top:10px;
+          margin-top:15px;
         }
       }
     }
@@ -1717,7 +1832,7 @@
       margin-right:unset;
       .front,.back{
         width:100%;
-        border-radius:20px;
+        border-radius:25px;
       }
       .back{
         display: flex;
@@ -1764,7 +1879,6 @@
 
 
 }
-
 
 
 @media (max-width:600px){
@@ -2050,6 +2164,24 @@
 
     }
 
+    .animat-block {
+      .animat1{
+        height:30px;
+      }
+      .animat2{
+        height:18px;
+      }
+      .animat3{
+        height:30px;
+      }
+      .round1,.round2,.round3,.round4,.round5,.round6,.round7{
+        width:10px;
+        height:10px;
+      }
+      .star1,.star2{
+        width: 15px;
+      }
+    }
   }
 
 
@@ -2216,14 +2348,6 @@
     .title-1 {
       h2{
         font-size:25px;
-      }
-    }
-    .our-mission-contain {
-      margin-top:5px;
-      p{
-        &:nth-child(n+2){
-          margin-top:5px;
-        }
       }
     }
   }
