@@ -487,232 +487,6 @@ header{
 /*===============
   6.Testimonial
 =================*/
-//.testimonial{
-//  position:relative;
-//  padding-top:98px;
-//  padding-bottom:102px;
-//  &:after{
-//    position:absolute;
-//    content:'';
-//    bottom:99%;
-//    left: 0;
-//    height:210px;
-//    width:100%;
-//    background-image: url("../images/testimonial/after.png");
-//    background-repeat:no-repeat;
-//    background-position:center;
-//  }
-//  &:before{
-//    position:absolute;
-//    content:'';
-//    top:99%;
-//    left: 0;
-//    height:179px;
-//    width:100%;
-//    background-image: url("../images/testimonial/before.png");
-//    background-repeat:no-repeat;
-//    background-position:center;
-//  }
-//  .title-1{
-//    margin-bottom:68px;
-//  }
-//
-//  .swiper-wrapper{
-//    display: flex;
-//    align-items: flex-end;
-//  }
-//  .swiper-slide{
-//    //&.width-415{
-//    //  width: 415px !important;
-//    //  height: 475px !important;
-//    //}
-//    //&.width-528{
-//    //  width:528px !important;
-//    //  height:420px !important;
-//    //}
-//    //&.width-472{
-//    //  width: 472px !important;
-//    //  height: 420px !important;
-//    //}
-//  }
-//
-//
-//  .testimonial-box{
-//    padding-top: 80px;
-//    padding-bottom:50px;
-//    //background-color:$white1;
-//    padding-left:60px;
-//    padding-right:80px;
-//    border-radius:60px;
-//    //margin-top:50px;
-//    margin-right:85px;
-//    position: relative;
-//    z-index:1;
-//    //min-height:418px;
-//    display:flex;
-//    align-items:center;
-//    //&.width-415{
-//    //  width: 415px !important;
-//    //  height: 475px !important;
-//    //}
-//    //&.width-528{
-//    //  width:528px !important;
-//    //  height:420px !important;
-//    //}
-//    //&.width-472{
-//    //  width: 472px !important;
-//    //  height: 420px !important;
-//    //}
-//    >div{
-//      //position: absolute;
-//      //top:50px;
-//      //left:0;
-//      //right:0;
-//      //bottom:0;
-//      //display: flex;
-//      //align-items: center;
-//      //justify-content: center;
-//      //&.box-1{
-//      //  padding-left:60px;
-//      //  padding-right:80px;
-//      //}
-//      //&.box-2{
-//      //  padding-left:100px;
-//      //}
-//    }
-//    h3,ul,p{
-//      position:relative;
-//      z-index:1;
-//    }
-//    h3{
-//      font-size:34px;
-//      color:$dark1;
-//      font-weight: 700;
-//      font-family: $font-2;
-//      margin-bottom:5px;
-//    }
-//    ul{
-//      margin-bottom:20px;
-//      li{
-//        i{
-//          color:$orange2;
-//          font-size:23px;
-//        }
-//        &:nth-child(n+2){
-//          margin-left:5px;
-//        }
-//      }
-//    }
-//    p{
-//      font-size:22px;
-//      color: $dark1;
-//      font-weight: 400;
-//      line-height: 28px;
-//      font-family: $font-2;
-//    }
-//    &.index-third{
-//      z-index:3;
-//    }
-//    &.index-two{
-//      z-index:2;
-//    }
-//    &.index-0{
-//      z-index:0;
-//    }
-//    &.box-p-left{
-//      padding-left:90px;
-//      padding-right:35px;
-//    }
-//    //.top-out,.top-in,.right-in,.left-in,.right-out,.left-out{
-//    //  position:absolute;
-//    //  content:'';
-//    //  width:100px;
-//    //  height:100px;
-//    //  border-radius:50%;
-//    //  background-color:$white1;
-//    //}
-//    //.top-out,.top-in{
-//    //  top:-50px;
-//    //  left: 0;
-//    //  right: 0;
-//    //  margin-left:auto;
-//    //  margin-right:auto;
-//    //}
-//    //.top-in{
-//    //  background-color:$theme-color2;
-//    //}
-//    //.right-in,.left-in{
-//    //  top:0;
-//    //  bottom:0;
-//    //  right:-50px;
-//    //  margin-top:auto;
-//    //  margin-bottom:auto;
-//    //  background-color:$theme-color2;
-//    //}
-//    //.left-in{
-//    //  left:-50px;
-//    //  right: unset;
-//    //}
-//    //.left-out{
-//    //  z-index: -1;
-//    //}
-//    //.left-out,.right-out{
-//    //  top:0;
-//    //  bottom:0;
-//    //  left:-50px;
-//    //  margin-top:auto;
-//    //  margin-bottom:auto;
-//    //}
-//    //.right-out{
-//    //  left:unset;
-//    //  right: -50px;
-//    //}
-//  }
-//  .swiper-container {
-//    width: 100%;
-//  }
-//  .swiper-button-prev,.swiper-button-next{
-//    top:55%;
-//    &:focus{
-//      border:none;
-//      outline:none;
-//    }
-//    &:after{
-//      color:$white;
-//      font-family: $font-awesome;
-//      font-weight:400;
-//      font-size:70px;
-//      line-height:0;
-//      transition: all 0.5s ease;
-//    }
-//
-//    &:hover{
-//      &:after{
-//        color: $theme-color1;
-//      }
-//    }
-//  }
-//  .swiper-button-prev{
-//    left:-50px;
-//    &:after{
-//      content:"\f104";
-//    }
-//
-//  }
-//  .swiper-button-next{
-//    right: -50px;
-//    &:after{
-//      content:"\f105";
-//    }
-//  }
-//  .testimonial-block{
-//    padding-left:110px;
-//    padding-right:110px;
-//  }
-//}
-
-
-
 .testimonial{
   position:relative;
   padding-top:98px;
@@ -742,11 +516,27 @@ header{
   .title-1{
     margin-bottom:68px;
   }
-
-  .swiper-wrapper{
-    display:flex;
-    align-items:flex-end;
-    justify-content: flex-start;
+  .mt-60{
+    margin-top: -60px;
+  }
+  .width-415{
+    width: 415px;
+    height: 475px;
+  }
+  .width-528{
+    width:528px;
+    height:420px;
+  }
+  .width-472{
+    width: 472px;
+    height: 420px;
+  }
+  .width-417{
+    width:417px;
+    height:420px;
+  }
+  .item{
+    padding-top: 60px;
   }
   .testimonial-box{
     position: relative;
@@ -755,38 +545,17 @@ header{
     align-items:center;
     background-position: center;
     background-size: contain;
-    &.width-415{
-      width: 415px;
-      height: 475px;
-    }
-    &.width-528{
-      width:528px;
-      height:420px;
-    }
-    &.width-472{
-      width: 472px;
-      height: 420px;
-    }
-
-    &.width-417{
-      width:417px;
-      height:420px;
-    }
     &.index-third{
       z-index:3;
     }
     &.box1-pl1{
-      margin-left: -60px;
+      margin-left: -50px;
     }
     &.index-two{
       z-index:2;
     }
     &.index-0{
       z-index:0;
-    }
-    &.box-p-left{
-      padding-left:90px;
-      padding-right:35px;
     }
     >div{
       position: absolute;
@@ -846,92 +615,63 @@ header{
       line-height: 28px;
       font-family: $font-2;
     }
-
-    //.top-out,.top-in,.right-in,.left-in,.right-out,.left-out{
-    //  position:absolute;
-    //  content:'';
-    //  width:100px;
-    //  height:100px;
-    //  border-radius:50%;
-    //  background-color:$white1;
-    //}
-    //.top-out,.top-in{
-    //  top:-50px;
-    //  left: 0;
-    //  right: 0;
-    //  margin-left:auto;
-    //  margin-right:auto;
-    //}
-    //.top-in{
-    //  background-color:$theme-color2;
-    //}
-    //.right-in,.left-in{
-    //  top:0;
-    //  bottom:0;
-    //  right:-50px;
-    //  margin-top:auto;
-    //  margin-bottom:auto;
-    //  background-color:$theme-color2;
-    //}
-    //.left-in{
-    //  left:-50px;
-    //  right: unset;
-    //}
-    //.left-out{
-    //  z-index: -1;
-    //}
-    //.left-out,.right-out{
-    //  top:0;
-    //  bottom:0;
-    //  left:-50px;
-    //  margin-top:auto;
-    //  margin-bottom:auto;
-    //}
-    //.right-out{
-    //  left:unset;
-    //  right: -50px;
-    //}
   }
-  .swiper-container {
-    width: 100%;
-  }
-  .swiper-button-prev,.swiper-button-next{
-    top:55%;
-    &:focus{
-      border:none;
-      outline:none;
-    }
-    &:after{
-      color:$white;
-      font-family: $font-awesome;
-      font-weight:400;
-      font-size:70px;
-      line-height:0;
-      transition: all 0.5s ease;
-    }
 
-    &:hover{
-      &:after{
-        color: $theme-color1;
+
+  .owl-nav {
+    button{
+      &.owl-prev,&.owl-next{
+        position: absolute;
+        top: 53%;
+        &:focus{
+          border:none;
+          outline:none;
+        }
+        &:after{
+          color:$white;
+          font-family: $font-awesome;
+          font-weight:400;
+          font-size:70px;
+          line-height:0;
+          transition: all 0.5s ease;
+        }
+        &:hover{
+          background-color: transparent;
+          &:after{
+            color: $theme-color1;
+          }
+        }
+        span{
+          display: none;
+        }
       }
-    }
-  }
-  .swiper-button-prev{
-    left:-50px;
-    &:after{
-      content:"\f104";
-    }
+      &.owl-next{
+        right: -60px;
+        &:after{
+          content:"\f105";
+        }
+      }
+      &.owl-prev{
+        left: -60px;
+        &:after{
+          content:"\f104";
+        }
 
-  }
-  .swiper-button-next{
-    right: -50px;
-    &:after{
-      content:"\f105";
+      }
     }
   }
   .testimonial-block{
     padding-left:110px;
     padding-right:110px;
+    >div{
+      //background-color: gray;
+    }
+  }
+  .owl-item{
+    opacity:0;
+    &.active{
+      opacity: 1;
+    }
   }
 }
 
