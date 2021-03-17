@@ -27,8 +27,6 @@
   
 
 
-
-
 /*=====================
   02. Image to background js
 ==========================*/
@@ -51,3 +49,17 @@
 
       el.hide();
   });
+
+
+
+/*=====================
+    03. advisory-box
+==========================*/
+
+
+$('.advisory-box .advisory-detail .hover-contain').slideUp("");
+$('.advisory-box').on('click', function(e) {
+    $(this).children().children('.advisory-detail').children('.hover-contain').slideToggle("");
+
+});
+
