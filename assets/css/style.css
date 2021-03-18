@@ -528,7 +528,7 @@ header {
       font-family: "Lato", sans-serif; }
   .testimonial .owl-nav button.owl-prev, .testimonial .owl-nav button.owl-next {
     position: absolute;
-    top: 53%;
+    top: 46%;
     font-size: 70px;
     line-height: 1; }
     .testimonial .owl-nav button.owl-prev:focus, .testimonial .owl-nav button.owl-next:focus {
@@ -1990,7 +1990,6 @@ footer {
         margin-left: auto;
         margin-right: auto; }
     .testimonial .owl-nav {
-      margin-top: 25px;
       margin-right: 30px; }
       .testimonial .owl-nav button.owl-next, .testimonial .owl-nav button.owl-prev {
         top: unset;
@@ -2342,7 +2341,7 @@ footer {
   .testimonial .width-528 p {
     -webkit-line-clamp: 4; }
   .testimonial .testimonial-box > div.box-1 {
-    padding-left: 35px;
+    padding-left: 45px;
     padding-right: 55px; }
   .testimonial .testimonial-box > div.box-2 {
     padding-top: 80px; }
