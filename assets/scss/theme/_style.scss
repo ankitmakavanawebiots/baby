@@ -1,3 +1,6 @@
+
+
+
 /*======================
   1.General CSS start
 ========================*/
@@ -138,8 +141,16 @@ a{
   }
 }
 
+
+
+// other browsers css //
+
 [class*="col-"] {
   position: relative;
+}
+.row > *{
+  padding-left:12px;
+  padding-right:12px;
 }
 
 
@@ -424,28 +435,31 @@ header{
   }
   .scientific-box{
     border-radius:68px;
-    height:100%;
     padding:15px;
     .icon-wrapper{
       margin-bottom:35px;
     }
     .scientific-contain{
       border:2px dashed $white;
-      height:100%;
       padding-top:60px;
       padding-left:40px;
       padding-right:30px;
       padding-bottom:40px;
       border-radius:68px;
+      min-height:455px;
+      max-height:455px;
       p{
         font-size:23px;
         color:$white;
         font-weight:400;
         font-family:$font-2;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
     }
   }
-
 }
 /*=============
   5.Phone view
@@ -626,6 +640,7 @@ header{
         position: absolute;
         top: 53%;
         font-size:70px;
+        line-height:1;
         &:focus{
           border:none;
           outline:none;
@@ -635,7 +650,7 @@ header{
           font-family: $font-awesome;
           font-weight:400;
           font-size:70px;
-          line-height:0;
+          line-height: 1;
           transition: all 0.5s ease;
         }
         &:hover{

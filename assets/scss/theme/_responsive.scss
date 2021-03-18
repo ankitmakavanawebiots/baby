@@ -391,7 +391,7 @@
   }
 
 
-   testimonial //
+   // testimonial //
   .testimonial {
     .testimonial-box {
       h3{
@@ -421,6 +421,8 @@
   }
 
 
+
+
 }
 
 @media(max-width:1508px) {
@@ -428,6 +430,9 @@
     padding-left:80px;
     padding-right:80px;
   }
+
+
+
 
 
 }
@@ -546,8 +551,10 @@
       .scientific-contain{
         padding-top: 50px;
         padding-left: 30px;
+        min-height: 375px;
+        max-height: 375px;
         p{
-          font-size:18px;
+         font-size:20px;
           line-height:1.4;
         }
       }
@@ -865,9 +872,11 @@
         padding-top:35px;
         padding-left:20px;
         padding-right:20px;
-        p{
-          line-height:1.3;
-        }
+        min-height: 340px;
+        max-height: 340px;
+        //p{
+        //  line-height:1.3;
+        //}
       }
     }
   }
@@ -953,8 +962,6 @@
   // Scientific //
   .scientific {
     .scientific-box {
-      max-height: 260px;
-      min-height: 260px;
       .icon-wrapper{
         margin-bottom:15px;
         img{
@@ -967,6 +974,11 @@
         padding-bottom:30px;
         padding-right:25px;
         text-align:center;
+        min-height:235px;
+        max-height:235px;
+        p{
+          font-size:18px;
+        }
       }
     }
     .scientific-block{
@@ -1720,12 +1732,9 @@
       }
     }
     .scientific-box {
-      //border-radius: 45px;
-      max-height: 250px;
-      min-height: 250px;
       .scientific-contain{
-        //border-radius: 45px;
         padding:20px;
+        min-height: 220px;
       }
     }
   }
@@ -2202,11 +2211,15 @@
     .scientific-block {
       >div{
        width:unset;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
     .scientific-box {
       .scientific-contain{
         padding:25px;
+        min-height: 225px;
+        max-height: 225px;
       }
     }
   }
@@ -2581,6 +2594,20 @@
 
   }
 
+  // scientific //
+  .scientific {
+    .scientific-box {
+      .scientific-contain {
+        min-height: 250px;
+        max-height: 250px;
+        p{
+          -webkit-line-clamp:7;
+        }
+      }
+    }
+  }
+
+
   // testimonial //
   .testimonial {
     .width-528{
@@ -2664,6 +2691,9 @@
       .scientific-contain{
         padding:20px;
         //border-radius:5px;
+        p{
+          -webkit-line-clamp: 6;
+        }
       }
     }
   }
