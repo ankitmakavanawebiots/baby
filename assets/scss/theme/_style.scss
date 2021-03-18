@@ -341,6 +341,7 @@ header{
       width:fit-content;
       li{
         display:flex;
+        display: -webkit-box;
         align-items:center;
         justify-content:center;
         position: relative;
@@ -507,6 +508,7 @@ header{
   position:relative;
   padding-top:98px;
   padding-bottom:102px;
+
   &:after{
     position:absolute;
     content:'';
@@ -928,6 +930,14 @@ footer{
   padding-bottom:280px;
   position:relative;
   z-index: 1;
+  .slick-slide{
+    opacity: 0;
+    &.slick-active{
+      transition: all 0.5s ease;
+      opacity:1;
+    }
+  }
+
   &:after{
     position:absolute;
     content:'';

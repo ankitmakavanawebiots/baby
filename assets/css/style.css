@@ -289,9 +289,9 @@ header {
     width: -moz-fit-content;
     width: fit-content; }
     .stimulation .stimulation-contain ul.stimulate-main li {
-      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      display: -webkit-box;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -772,6 +772,12 @@ footer {
   padding-bottom: 280px;
   position: relative;
   z-index: 1; }
+  .our-team .slick-slide {
+    opacity: 0; }
+    .our-team .slick-slide.slick-active {
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      opacity: 1; }
   .our-team:after {
     position: absolute;
     content: '';
