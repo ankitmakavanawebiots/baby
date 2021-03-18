@@ -87,7 +87,9 @@ a {
           filter: drop-shadow(20px 20px 0px #fccfbc); }
 
 .arrow-1 .slick-prev, .arrow-1 .slick-next {
-  top: 48%; }
+  top: 48%;
+  width: auto;
+  height: auto; }
   .arrow-1 .slick-prev:before, .arrow-1 .slick-next:before {
     color: #ffffff;
     font-family: FontAwesome;
@@ -530,7 +532,8 @@ header {
       font-family: "Lato", sans-serif; }
   .testimonial .owl-nav button.owl-prev, .testimonial .owl-nav button.owl-next {
     position: absolute;
-    top: 53%; }
+    top: 53%;
+    font-size: 70px; }
     .testimonial .owl-nav button.owl-prev:focus, .testimonial .owl-nav button.owl-next:focus {
       border: none;
       outline: none; }
@@ -585,7 +588,7 @@ footer {
     footer .footer-main .footer-left .chat-icon h3 {
       font-size: 20px;
       color: #ffffff;
-      font-weight: normal;
+      font-weight: 400;
       font-family: "Lato", sans-serif;
       margin-bottom: 15px;
       display: -webkit-box;
@@ -1997,7 +2000,8 @@ footer {
       .testimonial .owl-nav button.owl-next, .testimonial .owl-nav button.owl-prev {
         top: unset;
         bottom: 0;
-        position: unset; }
+        position: unset;
+        font-size: 40px; }
         .testimonial .owl-nav button.owl-next:after, .testimonial .owl-nav button.owl-prev:after {
           font-size: 40px; }
   footer {

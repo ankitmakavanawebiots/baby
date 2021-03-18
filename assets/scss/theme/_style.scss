@@ -99,10 +99,12 @@ a{
 
 .arrow-1{
   .slick-prev,.slick-next{
-    top: 48%;
+    top:48%;
+    width:auto;
+    height:auto;
     &:before{
       color:$white;
-      font-family: $font-awesome;
+      font-family:$font-awesome;
       font-weight:400;
       font-size:70px;
       opacity:1;
@@ -623,6 +625,7 @@ header{
       &.owl-prev,&.owl-next{
         position: absolute;
         top: 53%;
+        font-size:70px;
         &:focus{
           border:none;
           outline:none;
@@ -696,7 +699,7 @@ footer{
         h3{
           font-size:20px;
           color:$white;
-          font-weight:normal;
+          font-weight:400;
           font-family:$font-2;
           margin-bottom:15px;
           display: flex;
