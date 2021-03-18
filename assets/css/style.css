@@ -74,18 +74,6 @@ a {
 .color4 {
   background-color: #fcb1b1; }
 
-.shadow1 {
-  -webkit-filter: drop-shadow(20px 20px 0px #fae5e5);
-          filter: drop-shadow(20px 20px 0px #fae5e5); }
-
-.shadow2 {
-  -webkit-filter: drop-shadow(20px 20px 0px #a6acd7);
-          filter: drop-shadow(20px 20px 0px #a6acd7); }
-
-.shadow3 {
-  -webkit-filter: drop-shadow(20px 20px 0px #fccfbc);
-          filter: drop-shadow(20px 20px 0px #fccfbc); }
-
 .arrow-1 .slick-prev, .arrow-1 .slick-next {
   top: 48%;
   width: auto;
@@ -1266,15 +1254,6 @@ footer {
           margin-bottom: 30px; }
         .our-team .team-box .front p, .our-team .team-box .back p {
           font-size: 20px; }
-  .shadow1 {
-    -webkit-filter: drop-shadow(15px 15px 0px #fae5e5);
-            filter: drop-shadow(15px 15px 0px #fae5e5); }
-  .shadow2 {
-    -webkit-filter: drop-shadow(15px 15px 0px #a6acd7);
-            filter: drop-shadow(15px 15px 0px #a6acd7); }
-  .shadow3 {
-    -webkit-filter: drop-shadow(15px 15px 0px #fccfbc);
-            filter: drop-shadow(15px 15px 0px #fccfbc); }
   .advisory {
     padding-top: 57px;
     padding-bottom: 58px; }
@@ -1286,10 +1265,12 @@ footer {
       margin-bottom: -55px; }
       .advisory .advisory-block > div .advisory-box {
         margin-bottom: 55px; }
-    .advisory .advisory-box .advisory-detail h2 {
-      font-size: 25px; }
-    .advisory .advisory-box .advisory-detail h3 {
-      font-size: 16px; }
+    .advisory .advisory-box .advisory-detail {
+      margin-top: 20px; }
+      .advisory .advisory-box .advisory-detail h2 {
+        font-size: 25px; }
+      .advisory .advisory-box .advisory-detail h3 {
+        font-size: 16px; }
   .about .about-contain {
     height: 635px; }
   .testimonial .testimonial-box h3 {
@@ -1658,7 +1639,7 @@ footer {
   .phone-view .phone-view-box img {
     height: 400px; }
   .advisory .advisory-box .advisory-detail {
-    margin-top: 30px; }
+    margin-top: 15px; }
     .advisory .advisory-box .advisory-detail h2 {
       font-size: 22px; }
     .advisory .advisory-box .advisory-detail .hover-contain p {
@@ -2086,15 +2067,6 @@ footer {
     .our-team .animat-block .animat2 {
       height: 30px;
       top: 35%; }
-  .shadow1 {
-    -webkit-filter: drop-shadow(10px 10px 0px #fae5e5);
-            filter: drop-shadow(10px 10px 0px #fae5e5); }
-  .shadow2 {
-    -webkit-filter: drop-shadow(10px 10px 0px #a6acd7);
-            filter: drop-shadow(10px 10px 0px #a6acd7); }
-  .shadow3 {
-    -webkit-filter: drop-shadow(10px 10px 0px #fccfbc);
-            filter: drop-shadow(10px 10px 0px #fccfbc); }
   .advisory {
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -2336,8 +2308,10 @@ footer {
     margin-bottom: 25px; }
   .advisory .advisory-box {
     text-align: center; }
-    .advisory .advisory-box .advisory-detail .hover-contain p {
-      margin-top: 15px; }
+    .advisory .advisory-box .advisory-detail {
+      padding-left: unset; }
+      .advisory .advisory-box .advisory-detail .hover-contain p {
+        margin-top: 15px; }
   .advisory .advisory-block > div {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;

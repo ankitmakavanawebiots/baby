@@ -338,15 +338,15 @@
   }
 
   // advisory //
-  .shadow1{
-    filter: drop-shadow(15px 15px 0px $drop-shadow1);
-  }
-  .shadow2{
-    filter: drop-shadow(15px 15px 0px $blue);
-  }
-  .shadow3{
-    filter: drop-shadow(15px 15px 0px $drop-shadow2);
-  }
+  //.shadow1{
+  //  filter: drop-shadow(15px 15px 0px $drop-shadow1);
+  //}
+  //.shadow2{
+  //  filter: drop-shadow(15px 15px 0px $blue);
+  //}
+  //.shadow3{
+  //  filter: drop-shadow(15px 15px 0px $drop-shadow2);
+  //}
   .advisory{
     padding-top:57px;
     padding-bottom:58px;
@@ -366,12 +366,14 @@
     }
 
     .advisory-box {
+
       .img-wrraper {
         img{
           //width: 330px;
         }
       }
       .advisory-detail {
+        margin-top:20px;
         h2{
           font-size: 25px;
         }
@@ -1149,11 +1151,10 @@
   .advisory {
     .advisory-box {
       .advisory-detail {
-        margin-top:30px;
+        margin-top:15px;
         h2{
           font-size:22px;
         }
-
         .hover-contain{
           p{
             -webkit-line-clamp: 4;
@@ -2001,15 +2002,15 @@
   }
 
   //advisory //
-  .shadow1{
-    filter: drop-shadow(10px 10px 0px $drop-shadow1);
-  }
-  .shadow2{
-    filter: drop-shadow(10px 10px 0px $blue);
-  }
-  .shadow3{
-    filter: drop-shadow(10px 10px 0px $drop-shadow2);
-  }
+  //.shadow1{
+  //  filter: drop-shadow(10px 10px 0px $drop-shadow1);
+  //}
+  //.shadow2{
+  //  filter: drop-shadow(10px 10px 0px $blue);
+  //}
+  //.shadow3{
+  //  filter: drop-shadow(10px 10px 0px $drop-shadow2);
+  //}
   .advisory{
     padding-top:50px;
     padding-bottom:50px;
@@ -2541,13 +2542,21 @@
     }
     .advisory-box{
       text-align: center;
+      .img-wrraper{
+        //img{
+        //  width:280px;
+        //  height:auto;
+        //}
+      }
       .advisory-detail {
+        padding-left: unset;
         .hover-contain {
           p{
             margin-top:15px;
           }
         }
       }
+
     }
     .advisory-block {
       > div{
@@ -2573,6 +2582,7 @@
       left: -25px;
     }
   }
+
   // our team //
   .our-team {
     .team-block{
@@ -2639,6 +2649,10 @@
       padding-right: unset;
     }
   }
+
+
+  // adviosry board //
+
 
 }
 

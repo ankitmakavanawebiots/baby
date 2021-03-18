@@ -90,15 +90,15 @@ a{
   background-color: $pink;
 }
 
-.shadow1{
-  filter: drop-shadow(20px 20px 0px $drop-shadow1);
-}
-.shadow2{
-  filter: drop-shadow(20px 20px 0px $blue);
-}
-.shadow3{
-  filter: drop-shadow(20px 20px 0px $drop-shadow2);
-}
+//.shadow1{
+//  filter: drop-shadow(20px 20px 0px $drop-shadow1);
+//}
+//.shadow2{
+//  filter: drop-shadow(20px 20px 0px $blue);
+//}
+//.shadow3{
+//  filter: drop-shadow(20px 20px 0px $drop-shadow2);
+//}
 
 .arrow-1{
   .slick-prev,.slick-next{
