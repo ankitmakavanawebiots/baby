@@ -510,16 +510,6 @@
               width:486px;
             }
           }
-          &:nth-child(even){
-            .img-wrraper{
-              margin-left:100px;
-            }
-          }
-          &:nth-child(odd){
-            .img-wrraper{
-              margin-right:100px;
-            }
-          }
         }
       }
     }
@@ -944,7 +934,7 @@
             p{
               width:380px;
               display: -webkit-box;
-              -webkit-line-clamp: 2;
+              -webkit-line-clamp:3;
               -webkit-box-orient: vertical;
               overflow: hidden;
             }
@@ -1256,7 +1246,7 @@
     .baby-genius-contain {
       height:580px;
       h4{
-        font-size:16px;
+        font-size:18px;
         margin-bottom:5px;
       }
       h2{
@@ -1299,17 +1289,6 @@
             p{
               font-size:16px;
               width:350px;
-            }
-          }
-
-          &:nth-child(odd) {
-            .img-wrraper{
-              margin-right:80px;
-            }
-          }
-          &:nth-child(even) {
-            .img-wrraper{
-              margin-left:80px;
             }
           }
         }
@@ -1620,17 +1599,17 @@
 
   // baby-genius //
   .baby-genius {
-    background-image: url("../images/baby-genius/bg-img1.png") !important;
-    background-position: 26%;
-    background-size:auto;
+    //background-image: url("../images/baby-genius/bg-img1.png") !important;
+    //background-position:26%;
+    //background-size:auto;
     &:before{
-      display:none;
+      //display:none;
     }
     .icon-block{
-      bottom:5%;
+      //bottom:5%;
     }
     .baby-genius-contain{
-      height:480px;
+      //height:480px;
       >div{
         width:50%;
       }
@@ -1678,15 +1657,15 @@
     .stimulation-contain {
       ul.stimulate-main {
         li {
-          justify-content: space-around;
+          justify-content:space-around;
           &:nth-child(even) {
             .img-wrraper{
-              margin-left: 50px;
+              margin-left: 30px;
             }
           }
           &:nth-child(odd){
             .img-wrraper{
-              margin-right:50px;
+              margin-right:30px;
             }
           }
           .content-wrraper {
@@ -1902,7 +1881,7 @@
   .about{
     padding-bottom:55px;
     &:before{
-      display: none;
+      background-position:45%;
     }
      .about-contain{
        .title-1{
@@ -1911,7 +1890,6 @@
          }
        }
      }
-
     .animat-block {
       .animat2{
         top:35%;
@@ -1933,14 +1911,12 @@
       .round6{
         left:35%;
       }
-
-
     }
   }
 
   // our misision //
   .our-mission {
-    padding-top:50px;
+    //padding-top:50px;
     padding-bottom:45px;
     .title-1 {
       h2{
@@ -2083,7 +2059,6 @@
     }
   }
 
-
   //header //
   header{
     padding-top:15px;
@@ -2101,34 +2076,40 @@
 
   // baby genius start //
   .baby-genius {
-    background-position:42%;
-    z-index: 1;
-    background-blend-mode: overlay;
-    background-color:#607980;
+    background-image: url("../images/baby-genius/mobile-back.png") !important;
+    background-position:bottom;
     .baby-genius-contain{
+      height:798px;
       >div{
         width:auto;
         text-align: center;
         position: relative;
-        z-index:2;
+        margin-bottom:90px;
+      }
+      h4{
+        font-size:28px;
+        line-height:35px;
+        margin-bottom:5px;
+        span{
+          font-weight:900;
+        }
       }
       h2{
-        margin-bottom:5px;
+        font-size:34px;
+        margin-bottom:10px;
+        line-height:33px;
+      }
+      p{
+        font-size:19px;
+        line-height:23px;
       }
     }
-    .partner-animat{
-      top:0;
-      bottom:0;
-      left:0;
-      right:0;
-      margin:auto;
-      width:auto;
-      filter:opacity(0.4);
-    }
     ul.icon-block {
+      position:unset;
+      margin-top:20px;
       li {
         img{
-          width:30px;
+          width:38px;
         }
         &:nth-child(n+2){
           margin-left:5px;
@@ -2139,8 +2120,30 @@
       .cloud1,.cloud2,.cloud3{
         height:20px;
       }
+      .star1{
+        bottom: 37%;
+        left: 20%;
+      }
+      .star2{
+        top: 25%;
+        right: 90%;
+      }
+      .star3{
+        top: 12%;
+        right: 40%;
+      }
+      .cloud2{
+        top:18%;
+      }
     }
-
+    .partner-animat{
+      width:auto;
+      height:215px;
+      margin-left:auto;
+      margin-right:auto;
+      left:0;
+      bottom:5%;
+    }
   }
 
   // stimulation //
@@ -2175,14 +2178,17 @@
           &:nth-child(odd) {
             .img-wrraper{
               margin-right:unset;
+              text-align:center;
             }
           }
           &:nth-child(even) {
             .img-wrraper{
               margin-left:unset;
+              text-align:center;
             }
             .content-wrraper{
               order:2;
+              text-align:center;
             }
           }
           &:nth-child(n+2){
@@ -2199,9 +2205,6 @@
       }
     }
   }
-
-
-
 
   // scientific //
   .scientific {
@@ -2223,7 +2226,6 @@
       }
     }
   }
-
 
   // phone view //
   .phone-view {
@@ -2271,8 +2273,6 @@
     }
   }
 
-
-
   //footer //
   footer {
     .footer-main{
@@ -2290,27 +2290,43 @@
       }
       .footer-right{
         text-align: left;
-      }
-    }
-
-
-  }
-
-  // about //
-  .about {
-    padding-bottom: unset;
-    background-position:center ;
-    .about-contain {
-      height: 340px;
-      .title-1{
-        margin-top:10%;
-        p{
-          font-size:18px;
+        ul{
+          &:first-child {
+            li{
+              &:nth-child(n+2){
+                margin-left:15px;
+              }
+            }
+          }
         }
       }
-
     }
+  }
 
+
+
+  // about //
+  .about{
+    padding-bottom:unset;
+    background-position:bottom;
+    background-image:url("../images/about/mobile-back.png") !important;
+    &:before{
+      display:none;
+    }
+    .about-contain{
+      height:800px;
+      .title-1{
+        margin-top:10%;
+        h2{
+          font-size:34px;
+          line-height:34px;
+        }
+        p{
+          font-size: 19px;
+          line-height: 23px;
+        }
+      }
+    }
     .animat-block {
       .animat1{
         height:30px;
@@ -2334,6 +2350,7 @@
 
   // our mision //
   .our-mission {
+    padding-top:40px;
     p{
       font-size:18px;
     }
@@ -2404,18 +2421,6 @@
       }
     }
   }
-
-
-  // baby-genius //
-  .baby-genius {
-    .baby-genius-contain {
-      //height:450px;
-      > div{
-        padding:15px;
-      }
-    }
-  }
-
 
   // phone view //
   .phone-view{
@@ -2534,6 +2539,41 @@
 
 
 @media (max-width: 420px){
+  // baby ginus //
+  .baby-genius {
+    .baby-genius-contain {
+      >div{
+        margin-bottom:15px;
+      }
+      h2{
+        margin-bottom:15px;
+      }
+      h4{
+        width:250px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+    }
+    .partner-animat{
+      height:178px;
+      bottom:3%;
+    }
+    .animat-block {
+      .star1{
+        bottom:30%;
+        left:23%;
+      }
+      .star2{
+        top: 30%;
+        right: 10%;
+      }
+      .cloud2{
+        top:15%;
+      }
+    }
+  }
+
+
   // advisory //
   .advisory {
     .title-1{
@@ -2541,12 +2581,6 @@
     }
     .advisory-box{
       text-align: center;
-      .img-wrraper{
-        //img{
-        //  width:280px;
-        //  height:auto;
-        //}
-      }
       .advisory-detail {
         padding-left: unset;
         .hover-contain {
@@ -2555,7 +2589,6 @@
           }
         }
       }
-
     }
     .advisory-block {
       > div{
@@ -2650,14 +2683,36 @@
   }
 
 
-  // adviosry board //
-
-
 }
 
 
 
 @media (max-width: 360px) {
+
+
+  // baby ginus //
+  .baby-genius {
+    .baby-genius-contain {
+      h4{
+        font-size:18px;
+        line-height:25px;
+        width:160px;
+      }
+      h2{
+        font-size:28px;
+        line-height:1;
+        margin-bottom:10px;
+      }
+    }
+
+    ul.icon-block {
+      li {
+        img{
+          width:32px;
+        }
+      }
+    }
+  }
 
   // stimulation //
   .stimulation {
