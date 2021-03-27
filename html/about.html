@@ -190,6 +190,28 @@
                   </div>
                 </div>
               </div>
+              <div class="wow  fadeInUp"  data-wow-duration="4s">
+                <div class="team-box ">
+                  <div class="front color1">
+                    <div class="team-detail">
+                      <h3>Priyanka Zaveri Narang</h3>
+                      <h5>Marketing & Operations Head</h5>
+                      <h4>Aunt of a 1 year old</h4>
+                    </div>
+                    <div class="img-wrraper">
+                      <img src="../assets/images/team/2.png" alt="" class="img-fluid bg-img">
+                    </div>
+                  </div>
+                  <div class="back color1">
+                    <div class="team-detail">
+                      <h3>Priyanka Zaveri Narang</h3>
+                      <h5>Marketing & Operations Head</h5>
+                      <h4>Aunt of a 1 year old</h4>
+                      <p>Priyanka comes with 8+ years of rich and creative experience in Animation Feature Films, Advertisement and Visual Effects. She has experience with movies for children and leads the creation of unique video styles in BabyG. In the past, she has managed work with advertising agencies and spearheaded projects for brands like Disney-Pixar, Mercedes, Cadbury, BMW, and agencies like O&M, Lowe Lintas, etc.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -333,16 +355,15 @@
                   </a>
                 </div>
                 <div class="chat-icon">
-                  <h3><img src="../assets/images/footer/emial.png" alt="" class="img-fluid ">Contact@babyg.app</h3>
+                  <h3 data-bs-toggle="modal" data-bs-target="#email-contmodal"><img src="../assets/images/footer/emial.png" alt="" class="img-fluid ">Contact@babyg.app</h3>
                   <ul class="icon">
                     <li>
-                      <a href="https://www.facebook.com/BabyG.Parenting">
+                      <a href="https://www.facebook.com/BabyG.Parenting" target="_blank">
                         <img src="../assets/images/footer/fb.png" alt="" class="img-fluid ">
                       </a>
-
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/babyg_app/">
+                      <a href="https://www.instagram.com/babyg_app/" target="_blank">
                         <img src="../assets/images/footer/insta.png" alt="" class="img-fluid ">
                       </a>
                     </li>
@@ -376,6 +397,36 @@
       </div>
     </footer>
     <!-- footer end -->
+
+    <!-- emial contact modal  start-->
+    <div class="modal fade contact-modal" id="email-contmodal" >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name"  class="form-label">name</label>
+                <input type="text" placeholder="Enter your name" required class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="mo-number"  class="form-label">number</label>
+                <input type="number" placeholder="Enter your number" required class="form-control" id="mo-number">
+              </div>
+              <div class="form-group">
+                <label for="mail" class="form-label" >email</label>
+                <input type="text" placeholder="Enter your emial" required class="form-control" id="mail">
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">message</label>
+                <textarea class="form-control" rows="5" required placeholder="write your message here" id="message" ></textarea>
+              </div>
+              <button type="submit" class="btn submit-message">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- emial contact modal  end-->
 
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.3.1.min.js"></script>

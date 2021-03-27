@@ -601,7 +601,8 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      -webkit-font-smoothing: antialiased; }
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer; }
       footer .footer-main .footer-left .chat-icon h3 img {
         margin-right: 5px; }
     footer .footer-main .footer-right {
@@ -626,6 +627,36 @@ footer {
       color: #ffffff;
       font-weight: 400;
       font-family: "Lato", sans-serif; }
+
+.contact-modal .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px; }
+
+.contact-modal .modal-body {
+  padding: 30px; }
+  .contact-modal .modal-body form .form-group {
+    margin-bottom: 15px; }
+    .contact-modal .modal-body form .form-group label {
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1; }
+    .contact-modal .modal-body form .form-group .form-control {
+      border-color: #e8ebed;
+      text-transform: capitalize; }
+      .contact-modal .modal-body form .form-group .form-control:focus {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border-color: #e8ebed; }
+  .contact-modal .modal-body .submit-message {
+    background-color: #6184c6;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 30px;
+    line-height: 1;
+    margin-top: 15px; }
 
 /*===========
   7.About us
@@ -883,6 +914,16 @@ footer {
         height: 100%;
         background-position: top;
         background-size: cover; }
+    .our-team .team-box:hover .front {
+      z-index: 900;
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg); }
+    .our-team .team-box:hover .back {
+      z-index: 1000;
+      transform: rotateX(0deg) rotateY(0deg);
+      -webkit-transform: rotateX(0deg) rotateY(0deg);
+      -moz-transform: rotateX(0deg) rotateY(0deg); }
   .our-team .team-block {
     padding-left: 90px;
     padding-right: 90px; }
@@ -1512,7 +1553,7 @@ footer {
   .condition-section .terms-details ul li {
     font-size: 22px; }
   .our-team:before {
-    top: -29%; }
+    top: -20%; }
   .our-team .title-1 {
     margin-bottom: 40px; }
     .our-team .title-1 h2 {
@@ -1599,6 +1640,8 @@ footer {
     font-size: 16px; } }
 
 @media (max-width: 1280px) {
+  .our-team:before {
+    top: -23%; }
   .our-team .team-box {
     height: 410px; }
     .our-team .team-box .front p, .our-team .team-box .back p {
@@ -1726,6 +1769,8 @@ footer {
     height: 50px; }
   .our-team .animat-block .animat2 {
     height: 40px; }
+  .our-team:before {
+    top: -27%; }
   .phone-view .phone-view-box img {
     height: 400px; }
   .advisory .advisory-box .advisory-detail {
@@ -2152,6 +2197,24 @@ footer {
           font-size: 18px; }
         .our-team .team-box .front p, .our-team .team-box .back p {
           font-size: 16px; }
+      .our-team .team-box .front.hover {
+        z-index: 900;
+        transform: rotateY(180deg) !important;
+        -webkit-transform: rotateY(180deg) !important;
+        -moz-transform: rotateY(180deg) !important; }
+      .our-team .team-box .back.hover {
+        z-index: 1000;
+        transform: rotateX(0deg) rotateY(0deg) !important;
+        -webkit-transform: rotateX(0deg) rotateY(0deg) !important;
+        -moz-transform: rotateX(0deg) rotateY(0deg) !important; }
+      .our-team .team-box:hover .front {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+                transform: rotateX(0deg) rotateY(0deg);
+        -webkit-transform-style: preserve-3d; }
+      .our-team .team-box:hover .back {
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d; }
     .our-team .animat-block .animat1 {
       height: 30px; }
     .our-team .animat-block .animat2 {
@@ -2333,6 +2396,17 @@ footer {
       text-align: left; }
       footer .footer-main .footer-right ul:first-child li:nth-child(n+2) {
         margin-left: 15px; }
+  .contact-modal .modal-body {
+    padding: 20px; }
+    .contact-modal .modal-body form .form-group label {
+      font-size: 16px; }
+    .contact-modal .modal-body form .form-group .form-control {
+      padding: 5px 10px;
+      font-size: 14px; }
+    .contact-modal .modal-body .submit-message {
+      margin-top: 10px;
+      font-size: 14px;
+      padding: 10px 22px; }
   .about {
     padding-bottom: unset;
     background-position: bottom;

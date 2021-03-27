@@ -65,20 +65,31 @@ $('.advisory-box').on('click', function(e) {
 /*==============
    04. our team
 ================*/
-$( ".front" ).hover(function() {
-    $(this).addClass("hover")
+
+// $( ".front" ).hover(function() {
+//     $(this).addClass("hover")
+//     $(this).siblings('.back').addClass("hover");
+//     console.log('hover 11')
+// });
+//
+// $(".back" ).mouseout(function() {
+//     $(this).removeClass("hover")
+//     $(this).siblings('.front').removeClass("hover");
+// });
+
+
+
+$(".front" ).click(function() {
+    $(this).addClass("hover");
     $(this).siblings('.back').addClass("hover");
 });
 
-$(".back" ).mouseout(function() {
-    $(this).removeClass("hover")
-    $(this).siblings('.front').removeClass("hover");
-});
 
 $(".back" ).click(function() {
     $(this).removeClass("hover");
     $(this).siblings('.front').removeClass("hover");
 });
+
 
 
 
