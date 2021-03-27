@@ -25,6 +25,9 @@ h3 {
 h4 {
   margin-bottom: 0; }
 
+h5 {
+  margin-bottom: 0; }
+
 p {
   font-weight: 400;
   font-family: "Lato", sans-serif;
@@ -182,10 +185,10 @@ header {
       font-size: 29px;
       color: #ffffff;
       font-weight: 400;
-      font-family: "Lato", sans-serif;
-      text-transform: uppercase; }
+      font-family: "Lato", sans-serif; }
       .baby-genius .baby-genius-contain h4 span {
-        color: #faa961; }
+        color: #faa961;
+        font-weight: 900; }
     .baby-genius .baby-genius-contain h2 {
       font-size: 61px;
       color: #ffffff;
@@ -296,7 +299,8 @@ header {
           font-size: 46px;
           color: #ffffff;
           font-weight: 700;
-          font-family: "Baloo 2", cursive; }
+          font-family: "Baloo 2", cursive;
+          margin-bottom: 5px; }
         .stimulation .stimulation-contain ul.stimulate-main li .content-wrraper p {
           font-size: 25px;
           color: #626262; }
@@ -308,6 +312,8 @@ header {
         margin-left: 70px; }
       .stimulation .stimulation-contain ul.stimulate-main li:nth-child(even) .content-wrraper {
         text-align: right; }
+        .stimulation .stimulation-contain ul.stimulate-main li:nth-child(even) .content-wrraper p {
+          margin-left: auto; }
   .stimulation .animat-block .animat1, .stimulation .animat-block .animat2, .stimulation .animat-block .animat3, .stimulation .animat-block .animat4 {
     position: absolute; }
   .stimulation .animat-block .animat1 {
@@ -367,10 +373,10 @@ header {
     border-radius: 68px;
     padding: 15px; }
     .scientific .scientific-box .icon-wrapper {
-      margin-bottom: 35px; }
+      margin-bottom: 25px; }
     .scientific .scientific-box .scientific-contain {
       border: 2px dashed #ffffff;
-      padding-top: 60px;
+      padding-top: 40px;
       padding-left: 40px;
       padding-right: 30px;
       padding-bottom: 40px;
@@ -381,11 +387,7 @@ header {
         font-size: 22px;
         color: #ffffff;
         font-weight: 400;
-        font-family: "Lato", sans-serif;
-        display: -webkit-box;
-        -webkit-line-clamp: 7;
-        -webkit-box-orient: vertical;
-        overflow: hidden; }
+        font-family: "Lato", sans-serif; }
 
 /*=============
   5.Phone view
@@ -741,9 +743,13 @@ footer {
     display: flex;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: flex-end; }
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     .our-mission .our-mission-contain p {
-      width: 705px; }
+      width: 89%;
+      margin-left: auto; }
       .our-mission .our-mission-contain p:nth-child(n+2) {
         margin-top: 35px; }
   .our-mission .our-mission-block {
@@ -752,7 +758,8 @@ footer {
     display: flex;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: flex-end; }
+            align-items: flex-end;
+    padding: 0 160px; }
 
 /*===============
   8.Our team
@@ -826,27 +833,31 @@ footer {
     .our-team .team-box .front, .our-team .team-box .back {
       border-radius: 68px;
       text-align: center;
-      padding-top: 45px;
-      padding-left: 45px;
-      padding-right: 45px;
       overflow: hidden;
       -webkit-perspective: 1000px;
               perspective: 1000px;
       width: 100%; }
+      .our-team .team-box .front .team-detail, .our-team .team-box .back .team-detail {
+        padding-top: 45px;
+        padding-left: 45px;
+        padding-right: 45px; }
       .our-team .team-box .front h3, .our-team .team-box .back h3 {
-        font-size: 45px;
+        font-size: 35px;
         color: #5169b1;
         font-weight: 700;
         font-family: "Baloo 2", cursive;
         line-height: 1; }
-      .our-team .team-box .front h4, .our-team .team-box .back h4 {
-        font-size: 28px;
+      .our-team .team-box .front h4, .our-team .team-box .front h5, .our-team .team-box .back h4, .our-team .team-box .back h5 {
+        font-size: 22px;
         font-weight: 400;
         font-family: "Lato", sans-serif;
-        color: #ffffff;
-        margin-bottom: 30px; }
+        color: #ffffff; }
+      .our-team .team-box .front h5, .our-team .team-box .back h5 {
+        margin-bottom: 2px; }
+      .our-team .team-box .front h4, .our-team .team-box .back h4 {
+        padding-bottom: 30px; }
       .our-team .team-box .front p, .our-team .team-box .back p {
-        font-size: 24px;
+        font-size: 20px;
         color: #ffffff; }
       .our-team .team-box .front .img-wrraper, .our-team .team-box .back .img-wrraper {
         display: -webkit-box;
@@ -945,10 +956,11 @@ footer {
       margin-top: 35px;
       padding-left: 20px; }
       .advisory .advisory-box .advisory-detail h2 {
-        font-size: 35px;
-        color: #5169b1; }
+        font-size: 32px;
+        color: #5169b1;
+        margin-bottom: 3px; }
       .advisory .advisory-box .advisory-detail h3 {
-        font-size: 22px;
+        font-size: 20px;
         color: #626262;
         font-weight: 400;
         font-family: "Lato", sans-serif; }
@@ -959,13 +971,9 @@ footer {
           font-size: 18px;
           color: #626262;
           font-weight: 400;
-          line-height: 1.2;
+          line-height: 1.4;
           font-family: "Lato", sans-serif;
-          margin-top: 25px;
-          display: -webkit-box;
-          -webkit-line-clamp: 5;
-          -webkit-box-orient: vertical;
-          overflow: hidden; }
+          margin-top: 25px; }
   .advisory .advisory-block > div {
     margin-bottom: -90px; }
     .advisory .advisory-block > div .advisory-box {
@@ -1233,6 +1241,9 @@ footer {
       font-size: 20px; }
   .baby-genius ul.icon-block li img {
     width: 40px; }
+  .scientific .scientific-box .scientific-contain p {
+    line-height: 1.4;
+    font-size: 20px; }
   .our-mission {
     padding-top: 210px;
     padding-bottom: 72px; }
@@ -1245,12 +1256,10 @@ footer {
       width: auto; }
     .our-mission .img-wrraper {
       margin-bottom: 45px; }
-      .our-mission .img-wrraper img {
-        width: 60%; }
-    .our-mission .our-mission-contain p {
-      width: auto; }
-      .our-mission .our-mission-contain p:nth-child(n+2) {
-        margin-top: 20px; }
+    .our-mission .our-mission-contain p:nth-child(n+2) {
+      margin-top: 20px; }
+    .our-mission .our-mission-block {
+      padding: 0 100px; }
   .our-team {
     padding-top: 65px;
     overflow: hidden; }
@@ -1262,17 +1271,18 @@ footer {
       height: 450px;
       margin-right: 15px;
       margin-left: 15px; }
-      .our-team .team-box .front, .our-team .team-box .back {
-        padding-top: 40px;
-        padding-left: 40px;
-        padding-right: 40px; }
-        .our-team .team-box .front h3, .our-team .team-box .back h3 {
-          font-size: 35px; }
-        .our-team .team-box .front h4, .our-team .team-box .back h4 {
-          font-size: 24px;
-          margin-bottom: 30px; }
-        .our-team .team-box .front p, .our-team .team-box .back p {
-          font-size: 20px; }
+      .our-team .team-box .front .team-detail, .our-team .team-box .back .team-detail {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px; }
+      .our-team .team-box .front h3, .our-team .team-box .back h3 {
+        font-size: 30px; }
+      .our-team .team-box .front h5, .our-team .team-box .front h4, .our-team .team-box .back h5, .our-team .team-box .back h4 {
+        font-size: 20px; }
+      .our-team .team-box .front h4, .our-team .team-box .back h4 {
+        padding-bottom: 20px; }
+      .our-team .team-box .front p, .our-team .team-box .back p {
+        font-size: 18px; }
   .advisory {
     padding-top: 57px;
     padding-bottom: 58px; }
@@ -1290,6 +1300,8 @@ footer {
         font-size: 25px; }
       .advisory .advisory-box .advisory-detail h3 {
         font-size: 16px; }
+      .advisory .advisory-box .advisory-detail .hover-contain p {
+        font-size: 14px; }
   .about .about-contain {
     height: 635px; }
   .testimonial .testimonial-box h3 {
@@ -1304,7 +1316,15 @@ footer {
 @media (max-width: 1508px) {
   .custom-container, .container-second {
     padding-left: 80px;
-    padding-right: 80px; } }
+    padding-right: 80px; }
+  .our-team .team-box .front h3, .our-team .team-box .back h3 {
+    font-size: 30px; }
+  .our-team .team-box .front h5, .our-team .team-box .front h4, .our-team .team-box .back h5, .our-team .team-box .back h4 {
+    font-size: 18px; }
+  .our-team .team-box .front h4, .our-team .team-box .back h4 {
+    padding-bottom: 10px; }
+  .our-team .team-box .front p, .our-team .team-box .back p {
+    font-size: 16px; } }
 
 @media (max-width: 1470px) {
   .custom-container, .container-second {
@@ -1366,13 +1386,11 @@ footer {
         width: auto;
         height: 60px; }
     .scientific .scientific-box .scientific-contain {
-      padding-top: 50px;
       padding-left: 30px;
       min-height: 375px;
       max-height: 375px; }
       .scientific .scientific-box .scientific-contain p {
-        font-size: 20px;
-        line-height: 1.4; }
+        font-size: 17px; }
   .phone-view {
     padding-top: 79px;
     margin-bottom: 220px; }
@@ -1453,19 +1471,10 @@ footer {
       margin-bottom: 15px; }
     .our-team .title-1 p {
       font-size: 22px; }
-  .our-team .team-box {
-    height: 400px; }
-    .our-team .team-box .front, .our-team .team-box .back {
-      padding-top: 30px;
-      padding-left: 30px;
-      padding-right: 30px; }
-      .our-team .team-box .front h3, .our-team .team-box .back h3 {
-        font-size: 30px; }
-      .our-team .team-box .front h4, .our-team .team-box .back h4 {
-        margin-bottom: 20px;
-        font-size: 20px; }
-      .our-team .team-box .front p, .our-team .team-box .back p {
-        font-size: 18px; }
+  .our-team .team-box .front .team-detail, .our-team .team-box .back .team-detail {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px; }
   .our-team .animat-block .animat1 {
     width: auto;
     height: 60px; }
@@ -1478,7 +1487,9 @@ footer {
     .about .about-contain .title-1 p {
       font-size: 22px; }
   .advisory .advisory-box {
-    width: 75%; } }
+    width: 75%; }
+    .advisory .advisory-box .advisory-detail h2 {
+      font-size: 22px; } }
 
 @media (max-width: 1366px) {
   .testimonial .testimonial-box.box1-pl1 {
@@ -1531,11 +1542,19 @@ footer {
       padding-left: 20px;
       padding-right: 20px;
       min-height: 340px;
-      max-height: 340px; } }
+      max-height: 340px; }
+      .scientific .scientific-box .scientific-contain p {
+        font-size: 16px; }
+  .our-team .team-box .front h3, .our-team .team-box .back h3 {
+    font-size: 26px; }
+  .our-team .team-box .front h5, .our-team .team-box .front h4, .our-team .team-box .back h5, .our-team .team-box .back h4 {
+    font-size: 16px; } }
 
 @media (max-width: 1280px) {
   .our-team .team-box {
-    height: 360px; } }
+    height: 410px; }
+    .our-team .team-box .front p, .our-team .team-box .back p {
+      font-size: 14px; } }
 
 @media (max-width: 1199px) {
   .custom-container, .container-second {
@@ -1559,32 +1578,36 @@ footer {
     .stimulation .title-1 h2 {
       margin-bottom: 15px; }
   .stimulation .stimulation-contain ul.stimulate-main li .content-wrraper p {
-    width: 380px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden; }
+    width: 445px; }
+  .stimulation .stimulation-contain ul.stimulate-main li:nth-child(n+2) {
+    margin-top: 30px; }
   .stimulation .animat-block .animat3 {
     left: 50%; }
-  .scientific .scientific-box .icon-wrapper {
-    margin-bottom: 15px; }
-    .scientific .scientific-box .icon-wrapper img {
-      width: auto;
-      height: 50px; }
-  .scientific .scientific-box .scientific-contain {
-    padding-top: 35px;
-    padding-bottom: 30px;
-    padding-right: 25px;
-    text-align: center;
-    min-height: 235px;
-    max-height: 235px; }
-    .scientific .scientific-box .scientific-contain p {
-      font-size: 18px; }
+  .scientific .scientific-box {
+    max-width: 320px; }
+    .scientific .scientific-box .icon-wrapper {
+      margin-bottom: 15px; }
+      .scientific .scientific-box .icon-wrapper img {
+        width: auto;
+        height: 50px; }
+    .scientific .scientific-box .scientific-contain {
+      padding-top: 35px;
+      padding-bottom: 30px;
+      padding-right: 25px;
+      text-align: center;
+      min-height: 360px;
+      max-height: 360px; }
+      .scientific .scientific-box .scientific-contain p {
+        font-size: 20px; }
   .scientific .scientific-block {
     margin-bottom: -25px; }
     .scientific .scientific-block > div {
       width: 50%;
       margin-bottom: 25px; }
+      .scientific .scientific-block > div:nth-child(odd) .scientific-box {
+        margin-left: auto; }
+      .scientific .scientific-block > div:nth-child(even) .scientific-box {
+        margin-right: auto; }
   .testimonial .title-1 {
     margin-bottom: 35px; }
   .testimonial .swiper-container {
@@ -1632,6 +1655,8 @@ footer {
     font-size: 35px; }
   .our-mission p {
     font-size: 20px; }
+  .our-mission .our-mission-block {
+    padding: 0 70px; }
   .our-team .title-1 h2 {
     margin-bottom: 10px; }
   .our-team .title-1 p {
@@ -1656,9 +1681,8 @@ footer {
   .advisory .advisory-box .advisory-detail {
     margin-top: 15px; }
     .advisory .advisory-box .advisory-detail h2 {
-      font-size: 22px; }
+      font-size: 20px; }
     .advisory .advisory-box .advisory-detail .hover-contain p {
-      -webkit-line-clamp: 4;
       margin-top: 20px; }
   .advisory .advisory-block > div {
     margin-bottom: -30px; }
@@ -1726,15 +1750,6 @@ footer {
       display: none; }
     .scientific .title-1 {
       margin-top: unset; }
-    .scientific .scientific-box .scientific-contain {
-      padding: 25px; }
-      .scientific .scientific-box .scientific-contain p {
-        font-size: 16px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical; }
   .phone-view {
     padding-top: 45px;
     padding-bottom: 45px;
@@ -1768,11 +1783,7 @@ footer {
     .testimonial .testimonial-box h3 {
       font-size: 24px; }
     .testimonial .testimonial-box p {
-      font-size: 16px;
-      display: -webkit-box;
-      -webkit-line-clamp: 6;
-      -webkit-box-orient: vertical;
-      overflow: hidden; }
+      font-size: 16px; }
   footer {
     padding-top: 45px; }
     footer .footer-main {
@@ -1808,6 +1819,8 @@ footer {
     padding-bottom: 48px; }
     .our-mission .title-1 h2 {
       font-size: 30px; }
+    .our-mission .our-mission-block {
+      padding: 0 30px; }
   .our-team {
     background-color: #6184c6;
     padding-bottom: 40px;
@@ -1820,8 +1833,12 @@ footer {
       margin-right: 10px;
       margin-left: 10px;
       height: 368px; }
-      .our-team .team-box .front h4, .our-team .team-box .back h4 {
-        margin-bottom: 15px; }
+      .our-team .team-box .front h3, .our-team .team-box .back h3 {
+        font-size: 24px; }
+      .our-team .team-box .front h5, .our-team .team-box .front h4, .our-team .team-box .back h5, .our-team .team-box .back h4 {
+        font-size: 16px; }
+      .our-team .team-box .front p, .our-team .team-box .back p {
+        line-height: 1.4; }
     .our-team .team-block {
       padding-left: 120px;
       padding-right: 120px; }
@@ -1842,14 +1859,27 @@ footer {
     .advisory .advisory-box .advisory-detail {
       padding-left: 10px; }
     .advisory .animat-block .animat3 {
-      display: none; } }
+      display: none; }
+    .advisory .advisory-block > div:last-child {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 25px; }
+      .advisory .advisory-block > div:last-child .advisory-box {
+        width: 36.5%; }
+        .advisory .advisory-block > div:last-child .advisory-box:first-child {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; } }
 
 @media (max-width: 825px) {
   .our-team .team-block {
     padding-left: 50px;
     padding-right: 50px; }
   .our-team .team-box {
-    height: 350px; }
+    height: 391px; }
+    .our-team .team-box .front h3, .our-team .team-box .back h3 {
+      font-size: 22px; }
   .phone-view .phone-view-block > div {
     width: 25%; } }
 
@@ -1923,10 +1953,12 @@ footer {
     .scientific .scientific-block {
       margin-bottom: -20px; }
       .scientific .scientific-block > div {
-        margin-bottom: 20px; }
-    .scientific .scientific-box .scientific-contain {
-      padding: 20px;
-      min-height: 220px; }
+        margin-bottom: 20px;
+        width: 100%; }
+        .scientific .scientific-block > div:nth-child(odd) .scientific-box {
+          margin-right: auto; }
+        .scientific .scientific-block > div:nth-child(even) .scientific-box {
+          margin-left: auto; }
   .phone-view {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -2032,10 +2064,18 @@ footer {
     .our-mission .img-wrraper {
       margin-bottom: 35px;
       text-align: center; }
+      .our-mission .img-wrraper img {
+        width: 60%; }
     .our-mission .our-mission-contain {
       margin-top: 20px; }
-      .our-mission .our-mission-contain p:nth-child(n+2) {
-        margin-top: 15px; }
+      .our-mission .our-mission-contain p {
+        margin-left: unset;
+        width: auto; }
+        .our-mission .our-mission-contain p:nth-child(n+2) {
+          margin-top: 15px; }
+    .our-mission .our-mission-block {
+      padding-left: unset;
+      padding-right: unset; }
   .our-team {
     padding-top: 48px;
     padding-bottom: 45px;
@@ -2054,13 +2094,12 @@ footer {
       .our-team .team-box .front, .our-team .team-box .back {
         width: 100%;
         border-radius: 40px; }
-      .our-team .team-box .back {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
+        .our-team .team-box .front h3, .our-team .team-box .back h3 {
+          font-size: 24px; }
+        .our-team .team-box .front h4, .our-team .team-box .front h5, .our-team .team-box .back h4, .our-team .team-box .back h5 {
+          font-size: 18px; }
+        .our-team .team-box .front p, .our-team .team-box .back p {
+          font-size: 16px; }
     .our-team .animat-block .animat1 {
       height: 30px; }
     .our-team .animat-block .animat2 {
@@ -2073,8 +2112,12 @@ footer {
       margin-bottom: 45px; }
     .advisory:after, .advisory:before {
       display: none; }
+    .advisory .advisory-box .advisory-detail h2 {
+      font-size: 18px; }
+    .advisory .advisory-box .advisory-detail h3 {
+      font-size: 14px; }
     .advisory .advisory-box .advisory-detail .hover-contain p {
-      font-size: 16px; }
+      font-size: 14px; }
     .advisory .advisory-block > div:last-child {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2089,7 +2132,7 @@ footer {
 
 @media (max-width: 600px) {
   .stimulation .stimulation-contain ul.stimulate-main li:nth-child(n+2) {
-    margin-top: 10px; } }
+    margin-top: 15px; } }
 
 @media (max-width: 575px) {
   .custom-container, .container-second, .container-fluid {
@@ -2207,10 +2250,6 @@ footer {
     width: unset;
     margin-left: auto;
     margin-right: auto; }
-  .scientific .scientific-box .scientific-contain {
-    padding: 25px;
-    min-height: 225px;
-    max-height: 225px; }
   .phone-view .title-1 {
     margin-bottom: 30px; }
     .phone-view .title-1 h2 {
@@ -2275,19 +2314,8 @@ footer {
       font-size: 18px; }
   .our-team .title-1 p {
     font-size: 18px; }
-  .our-team .team-box .front, .our-team .team-box .back {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px; }
-    .our-team .team-box .front h3, .our-team .team-box .back h3 {
-      font-size: 26px; }
-    .our-team .team-box .front h4, .our-team .team-box .back h4 {
-      font-size: 18px;
-      margin-bottom: 10px; }
-    .our-team .team-box .front p, .our-team .team-box .back p {
-      font-size: 16px; }
-    .our-team .team-box .front .back, .our-team .team-box .back .back {
-      padding-bottom: 20px; }
+  .advisory .container-second {
+    padding: 0; }
   .advisory .advisory-block > div {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -2320,12 +2348,14 @@ footer {
     font-size: 25px; }
   .our-team .team-block > div {
     width: 100%; }
-  .our-team .team-box {
-    height: 320px; }
-    .our-team .team-box .team-detail h3 {
-      font-size: 22px; }
-    .our-team .team-box .team-detail h4 {
-      font-size: 16px; }
+  .our-team .team-box .front .team-detail, .our-team .team-box .back .team-detail {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .our-team .team-box .front h3, .our-team .team-box .back h3 {
+    font-size: 22px; }
+  .our-team .team-box .front h4, .our-team .team-box .front h5, .our-team .team-box .back h4, .our-team .team-box .back h5 {
+    font-size: 16px; }
   .advisory .advisory-box {
     width: 85%; }
     .advisory .advisory-box .advisory-detail h2 {
@@ -2375,25 +2405,27 @@ footer {
       display: block; }
       .advisory .advisory-block > div:last-child .advisory-box {
         width: 80%; }
+  .arrow-1 .slick-next, .arrow-1 .slick-prev {
+    top: unset;
+    bottom: -50px; }
   .arrow-1 .slick-next {
-    right: -25px; }
+    right: 45%; }
   .arrow-1 .slick-prev {
-    left: -25px; }
-  .our-team .team-block {
-    padding-left: 30px;
-    padding-right: 30px; }
-  .our-team .team-box .front p, .our-team .team-box .back p {
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden; }
+    left: 45%; }
+  .our-team {
+    padding-bottom: 80px; }
+    .our-team .team-block {
+      padding-left: 20px;
+      padding-right: 20px; }
+    .our-team .team-box {
+      height: 335px; }
+      .our-team .team-box .front p, .our-team .team-box .back p {
+        font-size: 14px; }
   .scientific .scientific-box .scientific-contain {
-    min-height: 250px;
-    max-height: 250px; }
+    min-height: 330px;
+    max-height: 330px; }
     .scientific .scientific-box .scientific-contain p {
-      -webkit-line-clamp: 7; }
-  .testimonial .width-528 p {
-    -webkit-line-clamp: 4; }
+      font-size: 18px; }
   .testimonial .testimonial-box > div.box-1 {
     padding-left: 45px;
     padding-right: 55px; }
@@ -2429,21 +2461,26 @@ footer {
   .stimulation .animat-block .animat1, .stimulation .animat-block .animat2, .stimulation .animat-block .animat3, .stimulation .animat-block .animat4 {
     width: 20px; }
   .stimulation .animat-block .animat3 {
-    bottom: 10%; }
+    bottom: 12%; }
   .stimulation .animat-block .animat1 {
     top: 28%; }
   .stimulation .animat-block .animat4 {
     top: 40%; }
   .scientific .scientific-box .scientific-contain {
-    padding: 20px; }
+    padding: 20px 15px;
+    min-height: 300px;
+    max-height: 300px; }
     .scientific .scientific-box .scientific-contain p {
-      -webkit-line-clamp: 6; }
+      font-size: 16px; }
   .phone-view .phone-view-box img {
     height: 220px; }
+  .our-team .team-block {
+    padding-left: unset;
+    padding-right: unset; }
   .our-team .team-box {
-    height: 260px; }
-  .testimonial .testimonial-box p {
-    -webkit-line-clamp: 3; }
+    height: 345px; }
+    .our-team .team-box .front h3, .our-team .team-box .back h3 {
+      font-size: 20px; }
   .testimonial .testimonial-box > div {
     display: -webkit-box;
     display: -ms-flexbox;
