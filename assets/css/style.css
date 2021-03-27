@@ -77,6 +77,9 @@ a {
 .color4 {
   background-color: #fcb1b1; }
 
+.section-pt-70 {
+  padding-top: 70px; }
+
 .arrow-1 .slick-prev, .arrow-1 .slick-next {
   top: 48%;
   width: auto;
@@ -817,6 +820,11 @@ footer {
       -moz-backface-visibility: hidden;
       -webkit-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out; }
+      .our-team .team-box .front.hover {
+        z-index: 900;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg); }
     .our-team .team-box .back {
       height: inherit;
       position: absolute;
@@ -830,6 +838,11 @@ footer {
       -moz-backface-visibility: hidden;
       -webkit-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out; }
+      .our-team .team-box .back.hover {
+        z-index: 1000;
+        transform: rotateX(0deg) rotateY(0deg);
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg); }
     .our-team .team-box .front, .our-team .team-box .back {
       border-radius: 68px;
       text-align: center;
@@ -870,14 +883,6 @@ footer {
         height: 100%;
         background-position: top;
         background-size: cover; }
-    .our-team .team-box:hover .front {
-      z-index: 900;
-      -webkit-transform: rotateY(180deg);
-      -moz-transform: rotateY(180deg); }
-    .our-team .team-box:hover .back {
-      z-index: 1000;
-      -webkit-transform: rotateX(0deg) rotateY(0deg);
-      -moz-transform: rotateX(0deg) rotateY(0deg); }
   .our-team .team-block {
     padding-left: 90px;
     padding-right: 90px; }
@@ -1004,6 +1009,44 @@ footer {
     left: 3%;
     -webkit-animation: hom-round 11s linear infinite;
             animation: hom-round 11s linear infinite; }
+
+/*===============
+  10.Advisory
+===============*/
+.condition-section p {
+  width: unset; }
+
+.condition-section .terms-details ul {
+  padding-left: 40px;
+  list-style-type: decimal; }
+  .condition-section .terms-details ul li {
+    display: list-item;
+    font-size: 28px;
+    line-height: 36px;
+    color: #626262;
+    font-weight: 400;
+    font-family: "Lato", sans-serif; }
+    .condition-section .terms-details ul li > ul {
+      padding-top: 15px;
+      list-style-type: lower-roman; }
+    .condition-section .terms-details ul li + li {
+      margin-top: 20px; }
+    .condition-section .terms-details ul li span {
+      display: block;
+      padding-left: 15px; }
+
+.condition-section .terms-details .list-style-none {
+  list-style-type: none; }
+  .condition-section .terms-details .list-style-none li {
+    position: relative; }
+    .condition-section .terms-details .list-style-none li::before {
+      position: absolute;
+      content: '-';
+      left: -20px;
+      top: 0; }
+
+.condition-section .terms-details + .terms-details {
+  padding-top: calc(40px + (80 - 40) * ((100vw - 320px) / (1920 - 320))); }
 
 /*===============
  custom animation
@@ -1260,6 +1303,9 @@ footer {
       margin-top: 20px; }
     .our-mission .our-mission-block {
       padding: 0 100px; }
+  .condition-section .terms-details ul li {
+    font-size: 24px;
+    line-height: 1.4; }
   .our-team {
     padding-top: 65px;
     overflow: hidden; }
@@ -1463,6 +1509,8 @@ footer {
     font-size: 22px; }
   .our-mission .title-1 h2 {
     font-size: 40px; }
+  .condition-section .terms-details ul li {
+    font-size: 22px; }
   .our-team:before {
     top: -29%; }
   .our-team .title-1 {
@@ -1657,6 +1705,8 @@ footer {
     font-size: 20px; }
   .our-mission .our-mission-block {
     padding: 0 70px; }
+  .condition-section .terms-details ul li {
+    font-size: 20px; }
   .our-team .title-1 h2 {
     margin-bottom: 10px; }
   .our-team .title-1 p {
@@ -1887,6 +1937,8 @@ footer {
   .custom-container, .container-second {
     padding-left: 40px;
     padding-right: 40px; }
+  .section-pt-70 {
+    padding-top: 50px; }
   .wow {
     -webkit-animation-name: none !important;
             animation-name: none !important;
@@ -2312,10 +2364,14 @@ footer {
     padding-top: 40px; }
     .our-mission p {
       font-size: 18px; }
+  .condition-section .terms-details ul {
+    padding-left: 20px; }
+    .condition-section .terms-details ul li {
+      font-size: 18px; }
+      .condition-section .terms-details ul li span {
+        padding-left: 5px; }
   .our-team .title-1 p {
     font-size: 18px; }
-  .advisory .container-second {
-    padding: 0; }
   .advisory .advisory-block > div {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -2437,6 +2493,9 @@ footer {
   .testimonial .testimonial-box > div.box-4 {
     padding-left: 70px;
     padding-right: 25px; }
+  .testimonial .testimonial-box p {
+    font-size: 15px;
+    line-height: 1.3; }
   .testimonial .testimonial-block {
     padding-left: unset;
     padding-right: unset; } }

@@ -55,13 +55,33 @@
 /*=====================
     03. advisory-box
 ==========================*/
-
-
 $('.advisory-box .advisory-detail .hover-contain').slideUp("");
 $('.advisory-box').on('click', function(e) {
     $(this).children().children('.advisory-detail').children('.hover-contain').slideToggle("");
 
 });
+
+
+/*==============
+   04. our team
+================*/
+$( ".front" ).hover(function() {
+    $(this).addClass("hover")
+    $(this).siblings('.back').addClass("hover");
+});
+
+$(".back" ).mouseout(function() {
+    $(this).removeClass("hover")
+    $(this).siblings('.front').removeClass("hover");
+});
+
+$(".back" ).click(function() {
+    $(this).removeClass("hover");
+    $(this).siblings('.front').removeClass("hover");
+});
+
+
+
 
 
 

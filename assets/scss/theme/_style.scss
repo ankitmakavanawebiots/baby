@@ -72,7 +72,6 @@ a{
       color:$white;
     }
   }
-
 }
 .theme-color1{
   background-color:$theme-color1;
@@ -91,6 +90,11 @@ a{
 }
 .color4{
   background-color: $pink;
+}
+
+
+.section-pt-70{
+  padding-top:70px;
 }
 
 //.shadow1{
@@ -997,6 +1001,12 @@ footer{
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
       transition: all .4s ease-in-out;
+      &.hover{
+        z-index: 900;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+      }
     }
     .back {
       height: inherit;
@@ -1010,6 +1020,12 @@ footer{
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
       transition: all .4s ease-in-out;
+      &.hover{
+        z-index: 1000;
+        transform: rotateX(0deg) rotateY(0deg);
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+      }
     }
     .front,.back{
       border-radius: 68px;
@@ -1056,18 +1072,20 @@ footer{
         //background-size:contain;
       }
     }
-    &:hover{
-      .front{
-        z-index: 900;
-        -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-      }
-      .back {
-        z-index: 1000;
-        -webkit-transform: rotateX(0deg) rotateY(0deg);
-        -moz-transform: rotateX(0deg) rotateY(0deg);
-      }
-    }
+    //&:hover{
+    //  .front{
+    //    z-index: 900;
+    //    transform: rotateY(180deg);
+    //    -webkit-transform: rotateY(180deg);
+    //    -moz-transform: rotateY(180deg);
+    //  }
+    //  .back {
+    //    z-index: 1000;
+    //    transform: rotateX(0deg) rotateY(0deg);
+    //    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    //    -moz-transform: rotateX(0deg) rotateY(0deg);
+    //  }
+    //}
   }
   .wow{
     //padding-top:20px;
@@ -1229,9 +1247,58 @@ footer{
       left:3%;
       animation: hom-round 11s linear infinite;
     }
+  }
+}
 
 
 
+
+/*===============
+  10.Advisory
+===============*/
+.condition-section {
+  p {
+    width: unset;
+  }
+  .terms-details {
+    ul {
+      padding-left: 40px;
+      list-style-type: decimal;
+      li {
+        display: list-item;
+        font-size: 28px;
+        line-height: 36px;
+        color: $dark;
+        font-weight: 400;
+        font-family: "Lato", sans-serif;
+        > ul {
+          padding-top: 15px;
+          list-style-type: lower-roman;
+        }
+        + li {
+          margin-top: 20px;
+        }
+        span {
+          display: block;
+          padding-left: 15px;
+        }
+      }
+    }
+    .list-style-none {
+      list-style-type: none;
+      li {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '-';
+          left: -20px;
+          top: 0;
+        }
+      }
+    }
+    + .terms-details {
+      padding-top: calc(40px + (80 - 40) * ((100vw - 320px) / (1920 - 320)));
+    }
   }
 }
 
