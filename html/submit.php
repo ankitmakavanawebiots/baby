@@ -1,5 +1,5 @@
 <?php
-    $to = "ankit.makvana@webiots.in";
+    $to = "Contact@babyg.app";
     $subject     = "Contact Us";
     
     $name = '';
@@ -35,11 +35,11 @@
     $message .= "Name: ".$name."\n";
 	$message .= "Mobile: ".$mobile."\n";
 	$message .= "Message: ".$message1."\n";
-	
-    if(@mail ($to,$subject, $message, $header) )
+
+    if(mail ($to,$subject, $message, $header) )
 	{
 	  echo 1;
 	}else{
 	  echo 2;
 	}
-?>
+?> 
