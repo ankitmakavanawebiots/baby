@@ -258,7 +258,15 @@ header{
     position:absolute;
     bottom:14%;
     li{
-      &:nth-child(n+2){
+      h6{
+        color:$white;
+        font-size:calc(16px + (22 - 16) * ((100vw - 320px) / (1920 - 320)));
+
+      }
+      &:first-child{
+        display: block;
+      }
+      &:nth-child(n+3){
         margin-left:15px;
       }
     }
@@ -483,7 +491,20 @@ header{
 ===============*/
 .phone-view{
   padding-top:120px;
-  margin-bottom:266px;
+  //margin-bottom:266px;
+  padding-bottom: 155px;
+  position: relative;
+  &:before{
+    position:absolute;
+    content:'';
+    top:99.5%;
+    left:0;
+    height:179px;
+    width:100%;
+    background-image: url("../images/phone-view/before.png");
+    background-repeat:no-repeat;
+    background-position:center;
+  }
   .title-1{
     margin-bottom:50px;
     margin-top:210px;
@@ -750,6 +771,15 @@ footer{
       ul{
         &.icon{
           margin-top:85px;
+          li{
+            &:first-child{
+              display: block;
+            }
+            h6{
+              color: $white;
+              font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1920 - 320)));
+            }
+          }
         }
         &:first-child{
           li{
@@ -807,7 +837,11 @@ footer{
         }
         .form-control{
           border-color: #e8ebed;
-          text-transform: capitalize;
+          //text-transform: capitalize;
+          font-family:$font-2;
+          &::placeholder {
+            text-transform: capitalize;
+          }
           &:focus{
             box-shadow:none;
             border-color:#e8ebed;
@@ -1015,7 +1049,8 @@ footer{
   .title-1{
     margin-bottom:123px;
     h2{
-      margin-bottom:17px;
+      margin-top:17px;
+      margin-bottom:unset;
     }
     p{
       width:915px;
